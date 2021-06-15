@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Главная страница{% endblock %}
+{% block content %}
+<div>
+	<div id="main_title" class="row">
+		<div class="col">
+			<div class="row">
+				<div class="col">
+					<img style="height:200px; width:auto;" src="{% static 'png/logo_big.png' %}">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<img style="height:80px;" src="{% static 'png/title_text.png' %}">
+					<img style="height:80px;" src="{% static 'png/number_one.png' %}">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button id="button_light">
+						Оставить заявку
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="color: white; padding-top:200px; padding-left: 10%;">
+		<div class="col-7">
+			<div class="row">
+				<div class="col-11">
+					<h1>Агентство недвижимости №1</h1>
+					<p>Помогаем найти, купить или продать недвижимость. Без рисков, стрессов и переплат.</p>
+					<p>Мы знаем, где лучше покупать квартиру для семьи с детьми,
+					какие новостройки перспективны для инвестиций, в каком районе лучшая
+					экологическая обстановка и откуда Вам будет удобнее добираться
+					на работу!</p>
+					<p>Агентство Недвижимости Номер Один обеспечит полное юридическое
+					сопровождение, помощь в получении ипотеки, регистрацию в
+					государственных инстанциях и постпродажное обслуживание. А еще –
+					сэкономим Вам время и деньги!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4" style="text-align: center; margin-left:-60px;">
+					<div class="row">
+						<div class="col">
+							<img src="{% static 'svg/10_2x.svg' %}">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p id="sub_text">Более 10 лет помогаем людям</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-6" style="text-align: center; margin-left:-60px;">
+					<div class="row">
+						<div class="col">
+							<img src="{% static 'svg/1000_2x.svg' %}">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-8">
+							<p id="sub_text">Более 1000 довольных клиентов</p>
+						</div>
+						<div class="col"></div>
+					</div>
+				</div>
+				<div class="col-4" style="text-align: center; margin-left:-60px;">
+					<div class="row">
+						<div class="col">
+							<img src="{% static 'svg/50_2x.svg'' %}">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p id="sub_text">Более 50 объектов недвижимости</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<img style="height:100%;" src="{% static 'png/city_photo2.png' %}">
+		</div>
+	</div>
+
+	<div class="carousel">
+		<ul class="scrool-box">
+			<li class="scrool-box" style="background: url({% static 'png/city_photo4.png' %}) no-repeat round; background-size: 100%;">
+				<h1 class="scrool-box">ДОМА И ДАЧИ</h1>
+				<p class="scrool-box">Покупка квартир от собственников и продажа</p>
+				<button class="scrool-box">Подробнее</button>
+			</li>
+			<li class="scrool-box" style="background: url({% static 'png/house_photo1.png' %}) no-repeat round; background-size: 100%;">
+				<h1 class="scrool-box">АРЕНДА</h1>
+				<p class="scrool-box" style="margin-right: 60px;">Поиск арендодателей и арендаторов для любых Ваших объектов недвижимости</p>
+				<button class="scrool-box">Подробнее</button>
+			</li>
+			<li class="scrool-box" style="background: url({% static 'png/house_photo2.png' %}) no-repeat round; background-size: 100%;">
+				<h1 class="scrool-box">ПОКУПКА КВАРТИР</h1>
+				<p class="scrool-box" style="margin-right: 60px;">Покупка квартир от собственников</p>
+				<button class="scrool-box">Подробнее</button>
+			</li>
+			<li class="scrool-box" style="background: url({% static 'png/city_photo5.png' %}) no-repeat round; background-size: 100%;">
+				<h1 class="scrool-box">УЧАСТКИ</h1>
+				<p class="scrool-box" style="margin-right: 60px;">Покупка и продажа загородных объектов: участков, таунхаусов, домов</p>
+				<button class="scrool-box">Перейти</button>
+			</li>
+		</ul>
+	</div>
+
+	<div class="row" style="padding-top:160px;">
+		<div class="col-1"></div>
+		<div id="our-obj" class="col" style="background: url('{% static 'png/city_photo6.png' %}') no-repeat round;background-size: 100%;">
+
+		</div>
+		<div id="our-obj" class="col" style="background: url('{% static 'png/city_photo7.png' %}') no-repeat round;background-size: 100%;">
+
+		</div>
+		<div id="our-obj" class="col" style="background: url('{% static 'png/city_photo8.png' %}') no-repeat round;background-size: 100%;">
+
+		</div>
+		<div class="col-1"></div>
+	</div>
+	<button class="catalog">Перейти в каталог</button>
+	<div id="consult">
+		<p>Test</p>
+	</div>
+</div>
+<script>
+
+</script>
+
+<!-- подключаем Zepto — облегчённую библиотеку, аналог jQuery -->
+
+{% endblock %}
+{% block footer %}
+<p class="x2016-2020-i1121222-iPe1yZ">© 2016 - 2020 ООО "Агентство Недвижимости Номер Один"</p>
+{% endblock %}
