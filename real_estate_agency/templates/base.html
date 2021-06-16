@@ -1,34 +1,48 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=1440, maximum-scale=1.0">
-      <link rel="shortcut icon" type="image/png" href="">
-      <meta name="og:type" content="website">
-      <meta name="twitter:card" content="photo">
-	   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   	<head>
+      	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      	<meta name="viewport" content="width=1440, maximum-scale=1.0">
+      	<link rel="shortcut icon" type="image/png" href="">
+      	<meta name="og:type" content="website">
+		<meta name="twitter:card" content="photo">
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      	<link rel="stylesheet" href="{% static 'css/test.css' %}">
 	</head>
-	<body style="margin: 0; background: #18191b;">
-		<div id="menu-bar" class="row" style="background-image: url({% static 'png/Rectangle 23.png' %});">
-			<div class="col-1"></div>
-			<div class="col-3">
-				<img style="height:80px;" src="{% static 'png/1m-ghbbvnm0-removebg-preview-2-3@2x.png' %}"/>
-			</div>
-			<div class="col-2"></div>
-			<div class="col">
-				<a href="" class="menu-bar-a">О нас</a>
-				<a href="" class="menu-bar-a">Услуги</a>
-				<a href="" class="menu-bar-a">Каталог</a>
-				<a href="" class="menu-bar-a">Вакансии</a>
-				<a href="" class="menu-bar-a">Контакты</a>
-			</div>
-			<div class="col-2"></div>
+	<body style="margin: 0; background: #18191b; padding: 0;">
+		<div id="menu-bar" style="background-image: url({% static 'png/Rectangle 23.png' %});">
+			<a class="small-logo" href="{% url 'index'%}">
+				<img src="{% static 'png/menu-logo.png' %}"/>
+			</a>
+			<a href="{% url 'about'%}" class="menu-bar-first">О нас</a>
+			<a href="{% url 'services'%}" class="menu-bar-a">Услуги</a>
+			<a href="{% url 'catalog'%}" class="menu-bar-a">Каталог</a>
+			<a href="{% url 'catalog'%}" class="menu-bar-a">Вакансии</a>
+			<a href="{% url 'contacts'%}" class="menu-bar-a">Контакты</a>
 		</div>
 		{% block content %}{% endblock %}
-		<div class="footer-C61RwL">
-			{% block footer %}{% endblock %}
+		<div class="footer" style="background-color:#0f0f0f;">
+			<div class="row">
+				<div class="col">
+					<img class="footer-logo" src="{% static 'png/1m-ghbbvnm0-removebg-preview-2@2x.png' %}">
+				</div>
+				<div class="col-3" style="padding-top: 20px;">
+					<a href="#">
+					   <img src="{% static 'svg/vector@2x.svg' %}" >
+					</a>
+					<a href="#">
+					   <img src="{% static 'svg/vector-1@2x.svg' %}" >
+					</a>
+					<a href="#">
+					   <img src="{% static 'svg/vector-3@2x.svg' %}" >
+					</a>
+				</div>
+				<div class="col"></div>
+			</div>
+			<img class="footer-line" src="{% static 'svg/line-4-1@1x.svg' %}">
+			<p class="footer-text">© 2016 - 2020 ООО "Агентство Недвижимости Номер Один"</p>
 		</div>
 	</body>
 </html>
