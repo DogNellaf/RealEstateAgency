@@ -3,29 +3,53 @@
 {% block title %}Услуги{% endblock %}
 {% block content %}
 <div class="services" style="padding-top: 110px;">
-   <img class="background"  src="{% static 'png/shutterstock-131654735-1@1x.png' %}" >
-   <div class="rectangle-72-C61RwL" ></div>
-   <div class="textlabel-C61RwL" >УСЛУГИ</div>
-   <h1 class="x1-C61RwL" >Агентство недвижимости №1</h1>
-   <img class="rectangle-69-C61RwL"  src="{% static 'png/rectangle-69@1x.png' %}" >
-   <img class="rectangle-70-C61RwL"  src="{% static 'png/rectangle-70@1x.png' %}" >
-   <img class="rectangle-71-C61RwL"  src="{% static 'png/rectangle-71@1x.png' %}" >
-   <p class="x-C61RwL montserrat-normal-white-15px" >Покупка и продажа недвижимости (квартиры, дома, <br>земельные участки);<br>Поиск аренды и сдача в аренду недвижимости;
-      <br>Составление и правовой анализ любых видов договоров (купли-<br>продажи, дарения, цессии и др.);<br> Регистрация сделок с недвижимостью;
-   </p>
-   <div class="x-VMr6Om" >Виды услуг предоставляемые нашим агентством недвижимости:</div>
-   <p class="x-mzXdH9 montserrat-normal-white-15px" >Юридическое сопровождение сделок с привлечением<br>ипотечных<br>кредитных средств, с применением материнского
-      <br>капитала и<br>сертификатов;<br>Юридическая проверка недвижимости;<br>Оказание помощи в приватизационном процессе;
-      <br>Оформление кадастрового паспорта и проведение межевания<br>земельных границ;
-   </p>
-   <p class="x-QxM5SU montserrat-normal-white-15px" >Получение разрешения на строительство. Регистрация жилых и<br>нежилых домов, построенных без разрешения на строительство;
-      <br>Представительство в суде. Суды общей юрисдикции. Арбитражные<br>суды;<br>До судебное урег улирование просроченной задолженности.
-   </p>
-   <div class="component-1-C61RwL" >
-      <a href="#">
-         <img class="rectangle-26-9p2GBv"  src="{% static 'svg/rectangle-26@2x.svg' %}" >
-         <div class="textlabel-9p2GBv" >Оставить заявку</div>
-      </a>
+   <div class="background"  style="background: url({% static 'png/shutterstock-131654735-1@1x.png' %});" >
+      <h1 class="title" >УСЛУГИ</h1>
    </div>
+
+
+   <div class="row" style="height: 460px;">
+      <div class="col-7">
+         <h1 class="info-text-label" >Агентство недвижимости №1</h1>
+         <p class="info-text-first" >Виды услуг предоставляемые нашим агентством недвижимости:</p>
+         <ul class="info-text">
+            <li>Покупка и продажа недвижимости (квартиры, дома, <br>земельные участки);</li>
+            <li>Поиск аренды и сдача в аренду недвижимости;</li>
+            <li>Составление и правовой анализ любых видов договоров (купли-<br>продажи, дарения, цессии и др.);</li>
+            <li>Регистрация сделок с недвижимостью;</li>
+         </ul>
+      </div>
+      <div class="col-5" style="background: url({% static 'png/rectangle-69@1x.png' %});">
+         <p></p>
+      </div>
+   </div>
+
+   <div class="row" style="height: 400px;">
+      <div class="col-5" style="background: url({% static 'png/rectangle-70@1x.png' %});">
+         <p></p>
+      </div>
+      <div class="col-7">
+         <p class="info-text2" >Юридическое сопровождение сделок с привлечением<br>ипотечных<br>кредитных средств, с применением материнского
+            <br>капитала и<br>сертификатов;<br>Юридическая проверка недвижимости;<br>Оказание помощи в приватизационном процессе;
+            <br>Оформление кадастрового паспорта и проведение межевания<br>земельных границ;
+         </p>
+      </div>
+   </div>
+
+   <div class="row" style="height: 400px;">
+      <div class="col-7">
+         <p class="info-text3" >Получение разрешения на строительство. Регистрация жилых и<br>нежилых домов, построенных без разрешения на строительство;
+            <br>Представительство в суде. Суды общей юрисдикции. Арбитражные<br>суды;<br>До судебное урег улирование просроченной задолженности.
+         </p>
+      </div>
+      <div class="col-5" style="background: url({% static 'png/rectangle-71@1x.png' %});">
+         <p></p>
+      </div>
+   </div>
+   <a href="#">
+      <div class="info-button" style="background: url({% static 'svg/rectangle-26@2x.svg' %}); background-size:100% 100%;">
+         <p>Оставить заявку</p>
+      </div>
+   </a>
 </div>
 {% endblock %}
