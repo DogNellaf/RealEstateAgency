@@ -1495,3 +1495,53 @@ width:auto;
 	margin-top: 60px;
 	margin-left: 147px;
 }
+
+/* страница "Вакансии" */
+
+.jobopenings .button {
+	height:80px;
+	margin-left:595px;
+	margin-top:75px;
+	width:250px;
+}
+
+.jobopenings .button p{
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.jobopenings .background {
+	height:218px;
+	width:1436px;
+}
+
+.jobopenings .title {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 47px;
+	color: #FFFFFF;
+	padding-top: 85px;
+	margin-left: 145px;
+}
+
+.jobopenings .text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+	margin-left: 148px;
+	padding-top: 65px;
+	width: 1143px;
+	line-height: 21.94px;
+}
