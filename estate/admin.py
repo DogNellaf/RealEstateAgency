@@ -1,4 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
-# TODO: Зарегистрировать модели в панели администратора
+from django.contrib import admin
+
+from .models import Estate, EstateType
+
+admin.site.register(Estate)
+admin.site.register(EstateType)
