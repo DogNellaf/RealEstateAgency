@@ -1,25 +1,30 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Главная страница{% endblock %}
+{% block title %}Контакты{% endblock %}
 {% block content %}
-<div class="kontakty screen " >
-   <img class="shutterstock131654735-1-C61RwL"  src="{% static 'png/shutterstock-131654735-1@1x.png' %}" >
-   <h1 class="textlabel-C61RwL" >КОНТАКТЫ</h1>
-   <div class="component-1-C61RwL" >
-      <a href="#">
-         <img class="rectangle-26-9p2GBv"  src="{% static 'svg/rectangle-26@2x.svg' %}" >
-         <div class="textlabel-9p2GBv" >Оставить заявку</div>
-      </a>
+<div class="contacts" style="padding-top: 110px; height: 1250px;">
+   <div class="background"  style="background: url({% static 'png/shutterstock-131654735-1@1x.png' %});">
+      <h1 class="title" >КОНТАКТЫ</h1>
    </div>
+
    <!-- <div class="x-C61RwL" >Главная /</div>
    <div class="textlabel-VMr6Om" >Квартиры</div> -->
-   <img class="x1-C61RwL"  src="{% static 'png/-------1-1@1x.png' %}" >
-   <div class="x3-C61RwL robotoslab-normal-white-24px" >Профессиональная улица, 3<br>Дмитров, Московская область</div>
-   <div class="x900-2000-C61RwL robotoslab-normal-white-24px" > Пн - Пт 9:00 - 20:00</div>
-   <div class="x-VMr6Om robotoslab-medium-white-24px" >Телефон:</div>
-   <div class="x-mzXdH9 robotoslab-medium-white-24px" >Работаем:</div>
-   <div class="x7-925-725-71-25-C61RwL robotoslab-normal-white-24px" >+7 925 725-71-25</div>
-   <div class="x7-925-078-87-04-C61RwL robotoslab-normal-white-24px" >+7 925 078-87-04</div>
-   <div class="x-QxM5SU robotoslab-medium-white-24px" >Адрес:</div>
+   <img class="x1-C61RwL"  src="{% static 'png/map.png' %}" >
+
+   <div class="address-title" >Адрес:</div>
+   <div class="address" >Профессиональная улица, 3<br>Дмитров, Московская область</div>
+
+   <div class="mobile-title" >Телефон:</div>
+   <div class="mobile-num1" >+7 925 725-71-25</div>
+   <div class="mobile-num2" >+7 925 078-87-04</div>
+
+   <div class="time-title" >Работаем:</div>
+   <div class="time" > Пн - Пт 9:00 - 20:00</div>
+
+   <a href="#">
+      <div class="button" style="background: url({% static 'svg/rectangle-26@2x.svg' %}); background-size:100% 100%;">
+         <p>Оставить заявку</p>
+      </div>
+   </a>
 </div>
 {% endblock %}
