@@ -13,6 +13,9 @@ def about(request):
 def catalog(request):
     return render(request, 'catalog.html')
 
+def houses(request):
+    return render(request, 'houses.html')
+
 def services(request):
     return render(request, 'services.html')
 
