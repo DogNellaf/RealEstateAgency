@@ -3,12 +3,11 @@
 {% block title %}Главная страница{% endblock %}
 {% block content %}
 <div class="index">
-   <div class="dmitrov-background" style="background: url({% static 'png/dmitrov-background.png' %});">
+   <div class="dmitrov-background" style="background: url({% static 'png/dmitrov-background.png' %}); background-size: cover;">
       <img class="big-logo"  src="{% static 'png/logo-wt-1@1x.png' %}" >
       <img class="agency-label" src="{% static 'svg/----------------------@2x.svg' %}" >
-      <!--<img class="number-one" src="{% static 'svg/-1@2x.svg' %}" >-->
       <a href="#">
-         <div class="button-label" style="background: url({% static 'svg/rectangle-2@2x.svg' %});">
+         <div class="button-label" style="background: url({% static 'svg/rectangle-2@2x.svg' %}); background-size: 100% 100%;">
             <p>Оставить заявку</p>
          </div>
       </a>
@@ -43,48 +42,45 @@
       </div>
    </div>
 
-   <div class="church" >
-      <img src="{% static 'png/church.png' %}" >
-   </div>
+   <img class="church" src="{% static 'png/church.png' %}" >
 
    <div class="houses-box" >
-      <div class="houses" style="background: url({% static 'png/rectangle-11@2x.png' %}); background-size: 100%;">
+      <div class="houses" style="background: url({% static 'png/rectangle-11@2x.png' %}) no-repeat; background-size:cover;">
          <h1 class="houses-title" >ДОМА И ДАЧИ</h1>
          <p class="houses-text" >Покупка квартир от собственников <br>и продажа</p>
          <a href="#">
-            <div class="houses-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size: 100%;">
+            <div class="houses-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size: cover;">
                <p>Подробнее</p>
             </div>
             <div class="textlabel-AU0wTJ" ></div>
          </a>
       </div>
-      <div class="houses" style="background: url({% static 'png/rectangle-12@2x.png' %}); background-size: 100%;">
+      <div class="houses" style="background: url({% static 'png/rectangle-12@2x.png' %}) no-repeat; background-size:cover;">
          <h1 class="houses-title" >АРЕНДА</h1>
          <p class="houses-text" >Поиск арендодателей и арендаторов <br>для любых Ваших объектов недвижимости</p>
          <a href="#">
-            <div class="houses-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size: 100%;">
+            <div class="houses-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size: cover;">
                <p>Подробнее</p>
             </div>
             <div class="textlabel-V6oc7X robotoslab-normal-white-14px" ></div>
          </a>
       </div>
-      <div class="houses" style="background: url({% static 'png/rectangle-13@2x.png' %}); background-size: 100%;">
+      <div class="houses" style="background: url({% static 'png/rectangle-13@2x.png' %}) no-repeat; background-size:cover;">
          <h1 class="houses-title" >КВАРТИР</h1>
-         <p class="houses-text" >Покупка квартир от собственников</p>
+         <p class="houses-text" >Покупка квартир от собственников<br><br></p>
          <a href="#">
-            <div class="houses-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size: 100%;">
+            <div class="houses-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size: cover;">
                <p>Подробнее</p>
             </div>
          </a>
       </div>
-      <div class="houses" style="background: url({% static 'png/rectangle-14@2x.png' %}); background-size: 100%;">
+      <div class="houses" style="background: url({% static 'png/rectangle-14@2x.png' %}) no-repeat; background-size:cover;">
          <h1 class="houses-title" >УЧАСТКИ</h1>
          <p class="houses-text" >Покупка и продажа загородных объектов: <br>участков, таунхаусов, домов</p>
          <a href="#">
-            <div class="houses-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size: 100%;">
+            <div class="houses-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size: cover;">
                <p>Подробнее</p>
             </div>
-            <div class="textlabel-AU0wTJ" ></div>
          </a>
       </div>
    </div>
@@ -93,7 +89,7 @@
       <h1 class="example-title" >Наши объекты</h1>
       <img class="example-house1"  src="{% static 'png/rectangle-43@2x.png' %}" >
       <img class="example-house2"  src="{% static 'png/rectangle-44@2x.png' %}" >
-      <img class="example-house3"  src="{% static 'png/rectangle-45@1x.png' %}" >
+      <img class="example-house2"  src="{% static 'png/rectangle-45@1x.png' %}" >
       <a href="#">
          <div class="example-button" style="background: url({% static 'svg/rectangle-26@2x.svg' %}) no-repeat; background-size: 100%;">
             <p>Перейти в каталог</p>
@@ -101,26 +97,27 @@
       </a>
    </div>
 
-   <div class="consult-background" style="background: url({% static 'png/rectangle-26@1x.png' %}); background-size: 100%;">
+   <div class="consult-background" style="background: url({% static 'png/rectangle-26@1x.png' %}) no-repeat; background-size:cover;">
       <img class="consult-title"  src="{% static 'svg/-------------------------------------@2x.svg' %}" >
       <form class="consult-form" >
          <textarea id="name" class="consult-input1" placeholder="Имя" style="border: 1px solid transparent; border-image: url({% static 'svg/line-3@2x.svg' %}) 2; border-top-style: none; border-left-style: none; border-right-style: none;"></textarea>
          <textarea id="mobile" class="consult-input2" placeholder="+7 (999) 999 99 99" style="border: 1px solid transparent; border-image: url({% static 'svg/line-3@2x.svg' %}) 2; border-top-style: none; border-left-style: none; border-right-style: none;"></textarea>
          <div style="display: table-cell;">
-            <input id="submit" class="consult-button" type="button" style="background: url({% static 'svg/group-11@2x.svg' %}); background-size: 100%;"> <br>
+            <input id="submit" class="consult-button" type="button" style="background: url({% static 'svg/group-11@2x.svg' %}) no-repeat; background-size:cover;"> <br>
             <input type="checkbox" class="consult-checkbox"  src="{% static 'svg/rectangle-27@2x.svg' %}">
             <span class="consult-text">Согласие на обработку данных</span>
          </div>
       </form>
    </div>
 
-   <div class="map" style="background: url({% static 'png/map.png' %}); background-size:100%; height: 478px;">
-      <img class="query-background"  src="{% static 'png/query.png' %}" >
-      <a href="#">
-         <div class="query-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size:100% 100%;">
-            <p>Оставить заявку </p>
-         </div>
-      </a>
+   <div class="map" style="background: url({% static 'png/map.png' %}) no-repeat; background-size:cover;">
+      <div class="query-background" style="background: url({% static 'png/query.png' %}); background-size:100% 100%;">
+         <a href="#">
+            <div class="query-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size:100% 100%;">
+               <p>Оставить заявку </p>
+            </div>
+         </a>
+      </div>
    </div>
 </div>
 {% endblock %}

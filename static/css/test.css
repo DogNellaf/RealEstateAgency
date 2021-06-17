@@ -41,212 +41,233 @@
 --font-family-roboto_slab:"Roboto Slab",Helvetica;
 }
 
-#menu-bar {
-	position:fixed;
-	width:110%;
-	z-index:9999999;
-}
-
 body {
+	background: #18191b; 
+	width: 100vw;
+	height: 100vh;
 	color: white;
 }
 
-.menu-bar {
-	display: inline-block;
+#menu-bar {
+	position:fixed;
+	width: 100vw;
+	height: 10vh;
+	z-index:9999999;
 }
 
 a.small-logo {
 	display: inline-block;
-	padding-left: 143px;
-}
-
-a.small-logo img {
-	display: inline-block;
-	height:80px;
+	height:100%;
+	padding-top: 0vh;
+	padding-left: 7vw;
 }
 
 a.menu-bar-first {
 	display: inline-block;
 	text-decoration:none;
-	color: rgba(255, 255, 255, 0.9)!important;
-	padding-left:480px;
-	font-size: 18px;
+	color: rgba(255, 255, 255, 1)!important;
+	padding-left:38vw;
 	text-align:center;
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 24px;
-	margin-top: -100px;
-	vertical-align	: middle;
+	font-size: 1.3vw;
+	padding-bottom: 10vh;
+	vertical-align: middle;
 }
 
 a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	display: inline-block;
 	text-decoration:none;
-	color: rgba(255, 255, 255, 0.9)!important;
-	padding-left:30px;
+	color: rgba(255, 255, 255, 1)!important;
+	padding-left:2vw;
 	text-align:center;
-	vertical-align	: middle;
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 24px;
-	margin-top: -100px;
+	font-size: 1.3vw;
+	padding-bottom: 10vh;
+	vertical-align: middle;
 }
 
 .footer {
-	display:inline-block;
-	height:105px;
-	width:1440px;
+	width:100vw;
 }
 
 .footer-text {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 10px;
-	line-height: 13px;
+	font-size: 0.9vh;
+	color: rgba(255, 255, 255, 0.5)!important;
+	line-height: 3vh;
 	letter-spacing: 0.05em;
 	text-align:center;
 }
 
 .footer-logo {
-	display:block;
-	height:58px;
-	margin-left:112px;
-	width:128px;
+	display:inline-block;
+	height:auto;
+	margin-bottom: 0.01%;
+	margin-left:4.3vw;
+	width:4vw;
 }
 
-.footer-line {
-	height:2px;
-	width:1426px;
+.footer-icon-first {
+	display:inline-block;
+	padding-left: 31.3vw;
+	margin-bottom: 0.01%;
+	margin-top: -6.4vh;
+	vertical-align: middle;
+}
+
+.footer-icon-first img{
+	width: 2.55vw;
+	height: 3.45vh;
+}
+
+.footer-icon {
+	display:inline-block;
+	margin-top: -6.4vh;
+	margin-bottom: 0.01%;
+	vertical-align: middle;
+}
+
+.footer-icon img{
+	width: 2.55vw;
+	height: 3.45vh;
 }
 
 /* стили главной страницы */
 
-.index .query-background {
-	padding-top: 64px;
-	margin-left:952px;
-	width: 332px;
-	height: 450px;
-}
-
-.index .group-29-C61RwL {
-	height:110px;
-	left:1010px;
-	top:3047px;
-	width:22px;
+.index .dmitrov-background {
+	height:90vh;
+	width:100vw;
 }
 
 .index .big-logo {
-	padding-left:387px;
-	padding-top:83px;
+	width: 73vw;
+	height: 50vh;
+	padding-left:25.6vw;
+	padding-top:7.6vh;
 }
 
-.index .menu-bar-C61RwL {
-	height:85px;
-	left:0;
-	overflow:hidden;
-	position:fixed;
-	top:-1px;
-	width:1440px;
+.index .agency-label {
+	height: 11vh;
+	width: 67.43vw;
+	padding-left:25.6vw;
+}
+
+.index .button-label {
+	margin-left:38vw;
+	height:8vh;
+	width:22.22vw;
+}
+
+.index .button-label p, a{
+	text-decoration:none;
+	font-family: Roboto Slab;
+	font-weight: 300;
+	font-size: 2.2vh;
+	line-height: 2.4vh;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 6vw;
+	padding-top: 2.4vh;
 }
 
 .index .houses-box {
 	display: table;
 	background-color:#18191b;
-	height:232px;
+	height:27.5vh;
 	overflow:hidden;
-	margin-top:133px;
-	width:1920px;
+	margin-top:12.3vh;
+	margin-right:0;
+	width:133vw;
 }
 
 .index .houses {
 	display: table-cell;
 	vertical-align: middle;
-	height:232px;
-	padding-left:0px;
-	width:480px;
+	height:27.5vh;
+	padding-left:0;
+	width:33.3vw;
+}
+
+.index .houses a{
+	color: #fff !important;
+	text-decoration:none;
 }
 
 .index .houses-title {
 	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.3vw;
+	line-height: 1.9vw;
 	text-transform: uppercase;
-	margin-left:59px;
+	margin-top:3.8vh;
+	margin-left:4vw;
 }
 
 .index .houses-text {
 	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 20px;
-	margin-left:59px;
-	padding-top:11px;
+	font-size: 1.1vw;
+	line-height: 1.9vw;
+	margin-left:4vw;
+	padding-top:1vh;
 }
 
 .index .houses-button {
-	border-radius:10px;
-	margin-left:59px;
-	height:42px;
-	width:166px;
+	height:5.3vh;
+	width:11.65vw;
+	margin-left:4vw;
 }
 
 .index .houses-button p {
 	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 12px;
-	line-height: 18px;
-	text-align: center;
-	padding-top: 10px;
+	font-size: 1.1vw;
+	padding-left: 20%;
+	padding-top: 7%;
 }
 
 .index .consult-background {
-	height:335px;
-	margin-top:44px;
-	width:1440px;
+	height:31vh;
+	margin-top:4vh;
+	width:100vw;
 }
 
 .index .consult-title {
-	height:30px;
-	margin-left:393px;
-	margin-top:46px;
-	width:654px;
+	height:2.7vh;
+	margin-left:27.2vw;
+	margin-top:4.2vh;
+	width:45.4vw;
 }
 
+
 .index .consult-form {
-	height:72px;
+	height:6.6vh;
 	display: table;
 }
 
 .index .consult-input1 {
-	margin-top: 80px;
-	margin-left: 303px;
-	padding-left: 20px;
+	margin-top: 7.4vh;
+	margin-left: 21vw;
+	padding-left: 1.3vw;
 	color: white;
-	width: 250px;
+	width: 17.3vw;
 	resize: none;
 	outline: none;
 	background-color: rgba(0, 125, 215, 0);
 }
 
+::-webkit-input-placeholder {
+	font-size: 0.97vw;
+}
+
 .input .consult-cell {
 	display: table-cell;
-	vertical-align	: middle;
+	vertical-align: middle;
 }
 
 .index .consult-input2 {
-	margin-left: 40px;
-	padding-left: 10px;
+	margin-left: 2.7vw;
+	padding-left: 0.69vw;
 	color: white;
-	width: 250px;
+	width: 17.3vw;
 	resize: none;
 	outline: none;
 	border: 0px solid;
@@ -254,8 +275,8 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .index .consult-button {
-	margin-left: 20px;
-	width: 250px;
+	margin-left: 1.38vw;
+	width: 17.3vw;
 	outline: none;
 	border: none;
 }
@@ -264,181 +285,113 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 9.5px;
-	line-height: 13px;
-}
-
-.index .consult-line {
-	height:1px;
-	left:0;
-	top:50px;
-	width:250px;
-}
-
-.index .consult-line2 {
-	height:1px;
-	left:294px;
-	top:50px;
-	width:250px;
+	font-size: 0.659vw;
+	line-height: 1.2vh;
 }
 
 .index .consult-button {
-	height:63px;
-	width:206px;
+	height:7.8vh;
+	width:14.3vw;
 }
 
 .index .consult-checkbox {
-	height:15px;
-	width:15px;
-	margin-left: 40px;
-}
-
-.index .consult-data-text {
-	color:#1b1b1b;
-	font-family:var(--font-family-roboto_slab);
-	font-size:var(--font-size-xxxs);
-	font-style:normal;
-	font-weight:400;
-	height:auto;
-	left:624px;
-	letter-spacing:0;
-	line-height:normal;
-	text-align:left;
-	top:59px;
-	width:auto;
+	height:1.3vh;
+	width:1vw;
+	margin-left: 2.77vw;
 }
 
 .index .example-title {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 40px;
-	line-height: 53px;
+	font-size: 2.7vw;
+	line-height: 4.9vh;
 	color: rgba(255, 255, 255, 0.9);
-	margin-left:567px;
-	margin-top:44px;
+	margin-left:39.3vw;
+	margin-top:4vh;
 }
 
 .index .example-house1 {
-	height:363px;
-	margin-top:63px;
-	margin-left:146px;
-	width:363px;
+	height:46vh;
+	width:25.2vw;
+	margin-top:5.83vh;
+	margin-left:10.3vw;
 }
 
 .index .example-house2 {
-	height:362px;
-	margin-top:63px;
-	padding-left:30px;
-	width:363px;
-}
-
-.index .example-house3 {
-	height:363px;
-	margin-top:63px;
-	padding-left:30px;
-	width:363px;
+	height:46vh;
+	width:25.2vw;
+	margin-top:5.88vh;
+	padding-left:2vw;
 }
 
 .index .example-button {
-	height:49px;
-	margin-top:44px;
-	margin-left:615px;
-	width:210px;
+	height:6vh;
+	margin-top:4vh;
+	margin-left:42.7vw;
+	width:14.5vw;
 }
 
 .index .example-button p{
-	padding-top:16px;
+	padding-top:2.5vh;
 	text-align: center;
 	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 0.97vw;
+	line-height: 1.66vh;
 	color: rgba(255, 255, 255, 0.9);
 }
 
 .index .query-button {
-	height:40px;
-	left:1020px;
-	position:absolute;
-	top:3230px;
-	width:210px;
+	z-index: 999999;
+	height:4vh;
+	margin-left:4.16vw;
+	margin-top: 30vh;
+	width:14.5vw;
+}
+
+.index .query-background {
+	margin-left:66.1vw;
+	height: 43.93vh;
+	width: 23vw;
 }
 
 .index .query-button p{
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 18px;
-	letter-spacing: 0.05em;
+	font-size: 1.29vh;
+	line-height: 1.66vh;
 	text-align: center;
-	padding-top: 11px;
+	padding-top: 1.01vh;
 	color: rgba(255, 255, 255, 0.9);
-}
-
-.index .dmitrov-background {
-	height:711px;
-	width:1440px;
-}
-
-.index .agency-label {
-	padding-top: 100px;
-	padding-left:312px;
-}
-
-.index .number-one {
-	
-}
-
-.index .button-label {
-	margin-left:565px;
-	height:70px;
-	width:320px;
-}
-
-.index .button-label p, a{
-	text-decoration:none;
-	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 26px;
-	letter-spacing: 0.05em;
-	color: rgba(255, 255, 255, 0.9);
-	padding-left: 63px;
-	padding-top: 20px;
 }
 
 .index .church {
-	height:617px;
-	left:931px;
+	height:80vh;
+	left:64.652vw;
 	position:absolute;
-	top:879px;
-	width:509px;
+	top:100vh;
+	width:35.34vw;
 }
 
 .index .title-label {
 	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 40px;
-	line-height: 53px;
-	margin-left:143px;
-	margin-top:207px;
+	font-size: 5vh;
+	line-height: 4.9vh;
+	margin-left:9.93vw;
+	margin-top:19.16vh;
 }
 
 .index .text {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
-	line-height: 25px;
-	padding-top:25px;
-	margin-left:148px;
+	font-size: 2.3vh;
+	line-height: 2.31vh;
+	padding-top:2.31vh;
+	margin-left:10.27vw;
 	text-align:left;
-	width:650px;
+	width:45.13vw;
 	color: rgba(255, 255, 255, 0.9)!important;
 }
 
@@ -448,64 +401,64 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 
 .index .label-cell {
 	display: table-cell;
-	vertical-align	: middle;
+	vertical-align: middle;
 }
 
 .index .label-10 {
-	margin-left:140px;
-	margin-top:33px;
+	margin-left:9.72vw;
+	margin-top:4.15vh;
+	width: 8.61vw;
+	height: 13.97vh;
 }
 
 .index .label-1000 {
-	margin-left:50px;
-	margin-top:33px;
+	margin-left:3.47vw;
+	margin-top:4.4vh;
+	width: 16.25vw;
+	height: 13.97vh;
 }
 
 .index .label-50 {
-	margin-left:100px;
-	margin-top:33px;
+	margin-left:3.47vw;
+	margin-top:4.4vh;
+	width: 16.25vw;
+	height: 13.97vh;
 }
 
 .index .text-10 {
 	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 1.79vh;
+	line-height: 2.14vh;
 	text-align: center;
-	margin-left:105px;
-	width:195px;
+	margin-left:7.29vw;
+	width:13.54vw;
 	color: rgba(255, 255, 255, 0.9)!important;
 }
 
 .index .text-1000 {
 	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 1.79vh;
+	line-height: 2.14vh;
 	text-align: center;
-	margin-left:70px;
-	width:195px;
+	margin-left:4.86vw;
+	width:13.54vw;
 	color: rgba(255, 255, 255, 0.9)!important;
 }
 
 .index .text-50 {
 	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 1.79vh;
+	line-height: 2.14vh;
 	text-align: center;
-	margin-left:70px;
-	width:195px;
+	margin-left:4.86vw;
+	width:13.54vw;
 	color: rgba(255, 255, 255, 0.9)!important;
 }
 
-.index .x1-map {
-	margin-top: 20px;
-	height:478px;
-	width:1440px;
+.index .map {
+	height: 60vh;
+	width:100vw;
+	margin-top: 1.85vh;
 }
 
 /* стили страницы "О нас" */
