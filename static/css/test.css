@@ -1043,186 +1043,155 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 /* страница "Вакансии" */
 
 .jobopenings .button {
-	height:80;
-	margin-left:595;
-	margin-top:75;
-	width:250;
+	height:10.08vh;
+	margin-left:41.32vw;
+	margin-top:9.45vh;
+	width:17.36vw;
 }
 
 .jobopenings .button p{
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14;
-	line-height: 18;
-	letter-spacing: 0.05em;
+	font-size: 1.76vh;
+	line-height: 2.27vh;
 	color: #FFFFFF;
 	text-align: center;
-	padding-top: 30;
+	padding-top: 3.78vh;
 }
 
 .jobopenings .background {
-	height:218;
-	width:1436;
+	height:27.46vh;
+	width:100vw;
 }
 
 .jobopenings .title {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 36;
-	line-height: 47;
+	font-size: 4.53vh;
+	line-height: 5.92vh;
 	color: #FFFFFF;
-	padding-top: 85;
-	margin-left: 145;
+	padding-top: 10.71vh;
+	margin-left: 12vw;
 }
 
 .jobopenings .text {
 	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18;
-	line-height: 22;
+	font-size: 2.27vh;
+	line-height: 2.77vh;
 	color: #FFFFFF;
-	margin-left: 148;
-	padding-top: 65;
-	width: 1143;
-	line-height: 21.94;
+	margin-left: 10vw;
+	padding-top: 8.19vh;
+	width: 79.38vw;
+	line-height: 2.76vh;
 }
 
 /* страница "Контакты" */
-.contacts {
-	
-}
 
 .contacts .button {
-	height:80;
-	left:607;
+	height:10.08vh;
+	left:42.15vw;
 	position:absolute;
-	top:1164;
-	width:226;
+	top:146.6vh;
+	width:15.69vw;
 }
 
 .contacts .button {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14;
-	line-height: 18;
-	letter-spacing: 0.05em;
+	font-size: 1.76vh;
+	line-height: 2.27vh;
 	color: #FFFFFF;
-	padding-top: 30;
-	padding-left: 48;
+	padding-top: 3.78vh;
+	padding-left: 3.33vw;
 }
 
 .contacts .background {
-	height:218;
-	width:1436;
+	height:27.46vh;
+	width:100vw;
 }
 
 .contacts .title {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 36;
-	line-height: 47;
+	font-size: 4.53vh;
+	line-height: 5.92vh;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	padding-top: 85;
-	padding-left: 145;
+	padding-top: 10.71vh;
+	padding-left: 10.07vw;
 }
 
 .contacts .address-title {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 24;
-	line-height: 32;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
 	color: #FFFFFF;
-	left:147;
+	left:10.21vw;
 	position:absolute;
-	text-align:left;
-	top:403;
+	top:50.76vh;
 }
 
 .contacts .mobile-title {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 24;
-	line-height: 32;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
 	color: #FFFFFF;
-	left:147;
+	left:10.21vw;
 	position:absolute;
-	top:482;
+	top:60.71vh;
 }
 
 .contacts .time-title {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 24;
-	line-height: 32;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
 	color: #FFFFFF;
-	left:147;
+	left:10.21vw;
 	position:absolute;
-	top:567;
+	top:71.41vh;
 }
 
 .contacts .map {
-	height:478;
-	left:4;
+	height:60.2vh;
+	left:0.28vw;
 	position:absolute;
-	top:658;
-	width:1440;
+	top:82.87vh;
+	width:100vw;
 }
 
 .contacts .address {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24;
-	line-height: 32;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
 	color: rgba(255, 255, 255, 0.9);
-	height:auto;
-	left:313;
+	left:21.74vw;
 	position:absolute;
 	text-align:left;
-	top:403;
+	top:50.76vh;
 }
 
 .contacts .mobile-num2 {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24;
-	line-height: 32;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
 	color: rgba(255, 255, 255, 0.9);
-	left:313;
+	left:21.74vw;
 	position:absolute;
-	top:522;
+	top:65.74vh;
 }
 
 .contacts .mobile-num1 {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24;
-	line-height: 32;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
 	color: rgba(255, 255, 255, 0.9);
-	left:313;
+	left:21.74vw;
 	position:absolute;
-	top:482;
+	top:60.71vh;
 }
 
 .contacts .time {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24;
-	line-height: 32;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
 	color: rgba(255, 255, 255, 0.9);
-	left:313;
+	left:21.74vw;
 	position:absolute;
-	top:567;
+	top:71.41vh;
 }
