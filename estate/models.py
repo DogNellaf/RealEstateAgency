@@ -19,7 +19,6 @@ class Estate(models.Model):
     price = models.FloatField('Цена', default=1000000)
     text = models.TextField('Описание', default="", max_length=50000)
     type = models.ForeignKey(EstateType, default="", verbose_name="Тип", on_delete=models.CASCADE)
-    photo_path = models.CharField('Путь до фото', default="", max_length=100, blank=True)
 
     def __str__(self):
         return self.title
@@ -27,3 +26,14 @@ class Estate(models.Model):
     class Meta:
         verbose_name = 'Недвижимость'
         verbose_name_plural = 'Объекты недвижимости'
+
+class Gallery(models.Model):
+    image = models.ImageField(upload_to='gallery')
+    estate = models.ForeignKey(Estate, on_delete=models.CASCADE, related_name='images')
+
+    def __str__(self):
+        return self.image.name
+
+    class Meta:
+        verbose_name = 'Галерея'
+        verbose_name_plural = 'Галереи'

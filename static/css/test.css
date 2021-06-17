@@ -780,8 +780,6 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	padding-top: 1.26vh;
 	text-align: center;
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 2.02vh;
 	line-height: 2.64vh;
 	color: rgba(255, 255, 255, 0.9);
@@ -814,11 +812,9 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .katalog .kvartiri-button p{
-	padding-top: 2.02vh;
+	padding-top: 1.26vh;
 	text-align: center;
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 2.02vh;
 	line-height: 2.64vh;
 	color: rgba(255, 255, 255, 0.9);
@@ -835,7 +831,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .katalog .arenda-button p{
-	padding-top: 10px;
+	padding-top: 1.26vh;
 	text-align: center;
 	font-family: Roboto Slab;
 	font-size: 2.02vh;
@@ -1203,4 +1199,142 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	left:21.74vw;
 	position:absolute;
 	top:71.41vh;
+}
+
+
+/* карточка товара */
+
+.estate {
+	padding-top: 20vh; 
+	background-color: #18191b;
+	height: 130vh;
+}
+
+.estate .back-text-arrow {
+	height: 2.15vh;
+	width: 8.19vw;
+	height: 2.15vh;
+	width: 8.19vw;
+	left: 7.92vw;
+	position: absolute;
+	top: 14.16vh;
+}
+
+.estate .main-photo {
+	height: 82.17vh;
+	width: 42.15vw;
+}
+
+.estate .gallery-first {
+	display: inline-block;
+	height: 11vh;
+	width: 6vw;
+	margin-left: 5.42vw;
+	margin-top: 2.78vh;
+	border: 0.065vh white solid;
+	vertical-align: middle;
+}
+.estate .gallery {
+	display: inline-block;
+	height: 11vh;
+	width: 6vw;
+	margin-left: 0;
+	margin-top: 2.78vh;
+	border: 0.065vh white solid;
+	vertical-align: middle;
+}
+
+.estate .arrow {
+	display: inline-block;
+	background-color: transparent;
+	border: 0.13vh solid #ffffffcc;
+	border-radius: 2.53vh;
+	height: 5.06vh;
+	margin-left: 2vw;
+	margin-top: 2.78vh;
+	vertical-align: middle;
+	width: 2.78vw;
+}
+
+.estate .arrow-element {
+	height: 2.4vh;
+	margin-top: 1.26vh;
+	margin-left: 0.97vw;
+	width: 0.7vw;
+}
+
+.estate .button {
+	height:10.08vh;
+	width:15.69vw;
+	margin-left:4.17vw;
+	margin-top:2vh;
+}
+
+.estate .button p{
+	font-family: Roboto Slab;
+	font-size: 1.77vh;
+	line-height: 2.28vh;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding-left:3vw;
+	padding-top:4vh;
+}
+
+.estate .title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	margin-left: 4.17vw;
+	font-size: 3.8vh;
+	line-height: 4.42vh;
+	color: #FFFFFF;
+}
+
+.estate .area {
+	display:inline-block;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.53vh;
+	color: #FFFFFF;
+	margin-top: 3.16vh;
+	margin-left: 4.17vw;
+}
+
+.estate .area-value {
+	display:inline-block;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.53vh;
+	color: #FFFFFF;
+	margin-top: 3.16vh;
+	margin-left: 1.18vw;
+}
+
+.estate .price {
+	display:inline-block;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.53vh;
+	color: #FFFFFF;
+	margin-top: 1.01vh;
+	margin-left: 4.17vw;
+}
+
+.estate .price-value {
+	display:inline-block;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.53vh;
+	color: #FFFFFF;
+	margin-top: 1.01vh;
+	margin-left: 3.54vw;
+}
+
+.estate .text {
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 3.5vh;
+	color: #FFFFFF;
+	margin-top: 3.16vh;
+	margin-left: 4.17vw;
 }

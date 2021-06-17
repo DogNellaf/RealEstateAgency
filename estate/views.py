@@ -13,6 +13,9 @@ def about(request):
 def catalog(request):
     return render(request, 'catalog.html')
 
+def homes(request):
+    return render(request, 'estate.html') #TODO: поменять на каталог зданий
+
 def houses(request):
     return render(request, 'houses.html')
 
