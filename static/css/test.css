@@ -66,11 +66,11 @@ a.menu-bar-first {
 	display: inline-block;
 	text-decoration:none;
 	color: rgba(255, 255, 255, 1)!important;
-	padding-left:38vw;
+	padding-left:36vw;
 	text-align:center;
 	font-family: Roboto Slab;
 	font-size: 1.3vw;
-	padding-bottom: 10vh;
+	padding-bottom: 11vh;
 	vertical-align: middle;
 }
 
@@ -82,7 +82,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	text-align:center;
 	font-family: Roboto Slab;
 	font-size: 1.3vw;
-	padding-bottom: 10vh;
+	padding-bottom: 11vh;
 	vertical-align: middle;
 }
 
@@ -109,9 +109,8 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 
 .footer-icon-first {
 	display:inline-block;
-	padding-left: 31.3vw;
-	margin-bottom: 0.01%;
-	margin-top: -6.4vh;
+	padding-left: 25vw;
+	margin-top: -4vh;
 	vertical-align: middle;
 }
 
@@ -122,8 +121,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 
 .footer-icon {
 	display:inline-block;
-	margin-top: -6.4vh;
-	margin-bottom: 0.01%;
+	margin-top: -4vh;
 	vertical-align: middle;
 }
 
@@ -148,8 +146,8 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 
 .index .agency-label {
 	height: 11vh;
-	width: 67.43vw;
-	padding-left:25.6vw;
+	width: 77.43vw;
+	padding-left:20.6vw;
 }
 
 .index .button-label {
@@ -162,11 +160,11 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	text-decoration:none;
 	font-family: Roboto Slab;
 	font-weight: 300;
-	font-size: 2.2vh;
+	font-size: 2.52vh;
 	line-height: 2.4vh;
 	color: rgba(255, 255, 255, 0.7);
-	padding-left: 6vw;
-	padding-top: 2.4vh;
+	padding-left: 5.5vw;
+	padding-top: 2.7vh;
 }
 
 .index .houses-box {
@@ -210,18 +208,17 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .index .houses-button {
-	height:5.3vh;
-	width:11.65vw;
+	height:6.25vh;
+	width:13vw;
 	margin-left:4vw;
 }
 
 .index .houses-button p {
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 1.1vw;
-	padding-left: 20%;
-	padding-top: 7%;
+	padding-left: 2.8vw;
+	padding-top: 1.75vh;
+	color: rgba(255, 255, 255, 0.9);
 }
 
 .index .consult-background {
@@ -277,8 +274,11 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 .index .consult-button {
 	margin-left: 1.38vw;
 	width: 17.3vw;
-	outline: none;
-	border: none;
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+	outline: none !important;
+	border: 0!important;
 }
 
 .index .consult-text {
@@ -334,8 +334,6 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	padding-top:2.5vh;
 	text-align: center;
 	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 0.97vw;
 	line-height: 1.66vh;
 	color: rgba(255, 255, 255, 0.9);
@@ -387,7 +385,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 2.3vh;
-	line-height: 2.31vh;
+	line-height: 3.4vh;
 	padding-top:2.31vh;
 	margin-left:10.27vw;
 	text-align:left;
@@ -706,7 +704,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 .about .background4 {
 	background-color:transparent;
 	height:83.12vh;
-	left:-17.78vw;
+	left:0.78vw;
 	position:absolute;
 	top:162.59vh;
 	width:29.72vw;
@@ -996,10 +994,17 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 .services .info-text2 {
 	font-family: Montserrat;
 	font-size: 1.89vh;
-	line-height: 2.27vh;
+	line-height: 3vh;
 	color: #FFFFFF;
 	margin-top: 16.5vh;
 	margin-left: 6.81vw;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.services li{
+	list-style-type: disc;
+	line-height: 3vh;
+	list-style-position: inside;
 }
 
 .services .info-text3 {
@@ -1009,6 +1014,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	color: #FFFFFF;
 	margin-top: 19.14vh;
 	margin-left: 10.21vw;
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .services .info-text-first {
@@ -1018,6 +1024,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	color: #FFFFFF;
 	margin-top: 3.27vh;
 	margin-left: 10.21vw;
+	color: rgba(255, 255, 255, 0.8);
 }
 
 .services .info-text {
@@ -1027,6 +1034,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	color: #FFFFFF;
 	margin-top: 3.15vh;
 	margin-left: 10.21vw;
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .services .info-text-label {
@@ -1045,7 +1053,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 .jobopenings .button {
 	height:10.08vh;
 	margin-left:41.32vw;
-	margin-top:9.45vh;
+	margin-top:4.45vh;
 	width:17.36vw;
 }
 
@@ -1081,6 +1089,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	padding-top: 8.19vh;
 	width: 79.38vw;
 	line-height: 2.76vh;
+	color: rgba(255, 255, 255, 0.75);
 }
 
 /* страница "Контакты" */
@@ -1098,8 +1107,8 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	font-size: 1.76vh;
 	line-height: 2.27vh;
 	color: #FFFFFF;
-	padding-top: 3.78vh;
-	padding-left: 3.33vw;
+	padding-top: 3.88vh;
+	padding-left: 3.73vw;
 }
 
 .contacts .background {
