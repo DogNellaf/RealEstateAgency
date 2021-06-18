@@ -14,19 +14,33 @@
         <h1 class="title">В данный момент нет недвижимости в этой категории!</h1>
     </div>
     {% else %}
-        {% for i in row_count %}
+        {% for list in elements %}
         <div class="row">
             <div class="col">
                 <div class="row">
-                    <a href="#" class="estate-elem-first" style="background: url({% static '{{gallery[i * 3].image}}' %}); background-size: cover;">
+                    {% for img in list %}
+                        {%if img is list|first %}
+                             {%if not img.image.url %}
+                                <a href="{{img.estate.title}}/" class="estate-elem-first" style="background: url({% static 'png/rectangle-55@2x.png' %}); background-size: cover;">
 
-                    </a>
-                    <a href="#" class="estate-elem" style="background: url({% static '{{gallery[i * 3].image}}' %}); background-size: cover;">
+                                </a>
+                            {% else %}
+                                <a href="{{img.estate.title}}/" class="estate-elem-first" style="background: url({{img.image.url}}); background-size: cover;">
 
-                    </a>
-                    <a href="#" class="estate-elem" style="background: url({% static '{{gallery[i * 3].image}}' %}); background-size: cover;">
+                                </a>
+                            {% endif %}
+                        {% else %}
+                            {%if not img.image.url %}
+                                <a href="{{img.estate.title}}/" class="estate-elem" style="background: url({% static 'png/rectangle-55@2x.png' %}); background-size: cover;">
 
-                    </a>
+                                </a>
+                            {% else %}
+                                <a href="{{img.estate.title}}/" class="estate-elem" style="background: url({{img.image.url}}); background-size: cover;">
+
+                                </a>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>

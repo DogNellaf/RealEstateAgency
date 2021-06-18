@@ -32,28 +32,17 @@ def apartments(request):
     row_count = count // 3
 
     estate_list = []
-    index = 1
+    temp_estate_list = []
+    index = 0
     while index < count:
-        estate = elements[index]
-        temp_list = []
-        if index == count - 1 and index % 3 != 0:
-            temp_index = 0
-            temp_list = []
-            while temp_index < index % 3:
-                temp_list.append(None)
+        if (index % 3 == 0 and index != 0) or (index == count - 1):
+            estate_list.append(temp_estate_list)
+            temp_estate_list = []
+        temp_estate_list.append(Gallery.objects.filter(estate=elements[index]).first())
+        index += 1
 
-        if index % 3 == 0:
-            temp_list = [elements[index], elements[index + 1], elements[index + 2]]
-        estate_list.append(temp_list)
-        index += 3
-
-
-    gallery_list = []
-    for i in elements:
-        gallery = Gallery.objects.filter(estate=i).first()
-        gallery_list.append(gallery)
-
-    return render(request, 'subcatalog.html', {'name': name, 'elements': elements, 'count': count, 'gallery': estate_list, 'row_count': row_count})
+    estate_list.append(temp_estate_list)
+    return render(request, 'subcatalog.html', {'name': name, 'elements': estate_list, 'count': count})
 
 
 # Каталог с домами
@@ -62,13 +51,21 @@ def houses(request):
     estate_type = EstateType.objects.filter(title='Дом').first()
     elements = Estate.objects.order_by('surface_area').filter(estate_type=estate_type)
 
-    gallery_list = []
-    for i in elements:
-        gallery = Gallery.objects.filter(estate=i).first()
-        gallery_list.append(gallery)
+    count = elements.count()
+    row_count = count // 3
 
-    count = Estate.objects.order_by('surface_area').filter(estate_type=estate_type).count
-    return render(request, 'subcatalog.html', {'name': name, 'elements': elements, 'count': count, 'gallery': gallery_list})
+    estate_list = []
+    temp_estate_list = []
+    index = 0
+    while index < count:
+        if (index % 3 == 0 and index != 0) or (index == count - 1):
+            estate_list.append(temp_estate_list)
+            temp_estate_list = []
+        temp_estate_list.append(Gallery.objects.filter(estate=elements[index]).first())
+        index += 1
+
+    estate_list.append(temp_estate_list)
+    return render(request, 'subcatalog.html', {'name': name, 'elements': estate_list, 'count': count})
 
 
 # Каталог с домами
@@ -76,8 +73,22 @@ def rent(request):
     name = "/ Аренда"
     estate_type = EstateType.objects.filter(title='Аренда').first()
     elements = Estate.objects.order_by('surface_area').filter(estate_type=estate_type)
-    count = elements.count
-    return render(request, 'subcatalog.html', {'name': name, 'elements': elements, 'count': count})
+
+    count = elements.count()
+    row_count = count // 3
+
+    estate_list = []
+    temp_estate_list = []
+    index = 0
+    while index < count:
+        if (index % 3 == 0 and index != 0) or (index == count - 1):
+            estate_list.append(temp_estate_list)
+            temp_estate_list = []
+        temp_estate_list.append(Gallery.objects.filter(estate=elements[index]).first())
+        index += 1
+
+    estate_list.append(temp_estate_list)
+    return render(request, 'subcatalog.html', {'name': name, 'elements': estate_list, 'count': count})
 
 
 # Каталог с домами
@@ -85,13 +96,29 @@ def land(request):
     name = "/ Участки"
     estate_type = EstateType.objects.filter(title='Участок').first()
     elements = Estate.objects.order_by('surface_area').filter(estate_type=estate_type)
-    count = elements.count
-    return render(request, 'subcatalog.html', {'name': name, 'elements': elements, 'count': count})
+
+    count = elements.count()
+    row_count = count // 3
+
+    estate_list = []
+    temp_estate_list = []
+    index = 0
+    while index < count:
+        if (index % 3 == 0 and index != 0) or (index == count - 1):
+            estate_list.append(temp_estate_list)
+            temp_estate_list = []
+        temp_estate_list.append(Gallery.objects.filter(estate=elements[index]).first())
+        index += 1
+
+    estate_list.append(temp_estate_list)
+    return render(request, 'subcatalog.html', {'name': name, 'elements': estate_list, 'count': count})
 
 
 # Страница определенного объекта недвижимости
-def estate(request):
-    return render(request, 'estate.html')
+def estate(request, title):
+    obj = Estate.objects.filter(title=title).first()
+    list = Gallery.objects.filter(estate=obj)
+    return render(request, 'estate.html', {'gallery': list})
 
 
 # Услуги

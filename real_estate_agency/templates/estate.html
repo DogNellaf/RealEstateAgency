@@ -3,33 +3,32 @@
 {% block title %}Недвижимость{% endblock %}
 {% block content %}
 <div class="estate">
-    <a href="#" class="back-text-arrow" style="background-image: url({% static 'svg/back-arrow.svg' %}); background-size: 100% 100%;"></a>
+    <a href="{% url 'catalog'%}" class="back-text-arrow" style="background-image: url({% static 'svg/back-arrow.svg' %}); background-size: 100% 100%;"></a>
     <div class="row">
         <div class="col">
-            <div class="main-photo" style="background-image: url({% static 'png/rectangle-43@2x.png' %}); background-size: 100% 100%;"></div>
-            <div class="gallery-first" style="background-image: url({% static 'png/rectangle-43@2x.png' %});background-size: 100% 100%;"></div>
-            <div class="gallery" style="background-image: url({% static 'png/rectangle-43@2x.png' %});background-size: 100% 100%;"></div>
-            <div class="gallery" style="background-image: url({% static 'png/rectangle-43@2x.png' %});background-size: 100% 100%;"></div>
-            <div class="gallery" style="background-image: url({% static 'png/rectangle-43@2x.png' %});background-size: 100% 100%;"></div>
-            <div class="gallery" style="background-image: url({% static 'png/rectangle-43@2x.png' %});background-size: 100% 100%;"></div>
+            <div class="main-photo" style="background-image: url({{gallery.0.image.url}}); background-size: 100% 100%;"></div>
+            <div class="gallery-first" style="background-image: url({{gallery.1.image.url}});background-size: 100% 100%;"></div>
+            <div class="gallery" style="background-image: url({{gallery.2.image.url}});background-size: 100% 100%;"></div>
+            <div class="gallery" style="background-image: url({{gallery.3.image.url}});background-size: 100% 100%;"></div>
+            <div class="gallery" style="background-image: url({{gallery.4.image.url}});background-size: 100% 100%;"></div>
+            <div class="gallery" style="background-image: url({{gallery.5.image.url}});background-size: 100% 100%;"></div>
             <div class="arrow">
                 <div class="arrow-element" style="background-image: url({% static 'svg/arrow.svg' %});background-size: 100% 100%;"></div>
             </div>
         </div>
         <div class="col" style="width: 80%!important;">
-            <div class="title">Дмитров, мкр. имени В.Н. Махалина, д 25</div>
+            <div class="title">{{gallery.0.estate.address}}</div>
             <div>
                 <div class="area">Площадь:</div>
-                <div class="area-value">60,7 кв.м</div>
+                <div class="area-value">{{gallery.0.estate.surface_area}}</div>
             </div>
             <div>
                 <div class="price">Цена:</div>
-                <div class="price-value">6 350 000 ₽</div>
+                <div class="price-value">{{gallery.0.estate.price}} ₽</div>
             </div>
 
             <div class="text">
-                <p>Квартира светлая,с отличным ремонтом, жилая площадь с/у раздельный, бойлер, просторная ванна, качественные стеклопакеты ПВХ, окна выходят на южную сторону, лоджия длиной 6 метров <br>и шириной 1,3 метра с натяжным потолком. Отличные соседи. В квартире остается мебель: шкаф в прихожей <br>и спальне, кондиционер кухонный гарнитур. Хорошая металлическая дверь. Всё необходимое в шаговой доступности:<br>- Лицей №4;<br>- Детский сад "Золотая рыбка";<br>- Поликлиника;<br>- Сетевые магазины;<br>- Остановки общественного транспорта;<br>- Сосновый бор;<br>- Ледовый дворец;<br>- Парк "Экстрим".<br>Все преимущества развитой инфраструктуры. До станции Дмитров 10 мин. на автобусе. 60км от МКАД.<br>Квартира без обременений, подходит под ипотеку и любые сертификаты, скидка 0,3% на ипотеку Сбербанка, оперативный показ.
-                </p>
+                <p>{{gallery.0.estate.text}}</p>
             </div>
             <a href="#">
                 <div class="button" style="background: url({% static 'svg/rectangle-26@2x.svg' %}); background-size:100% 100%;">
