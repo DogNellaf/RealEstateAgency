@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Каталог{% endblock %}
+{% block content %}
+<div class="subcatalog">
+    <div class="background" style="background: url({% static 'png/shutterstock-131654735-1@1x.png' %}); background-size: cover;">
+        <h1 class="title">Каталог</h1>
+    </div>
+    <div class="text-first"><a href="{% url 'index'%}" class="text-first">Главная /</a></div>
+    <div class="text"><a href="{% url 'catalog'%}" class="text">Каталог</a></div>
+    <div class="text">{{ name }}</div>
+    {%if count == 0 %}
+    <div style="height: 100vh;">
+        <h1 class="title">В данный момент нет недвижимости в этой категории!</h1>
+    </div>
+    {% else %}
+        {% for i in row_count %}
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <a href="#" class="estate-elem-first" style="background: url({% static '{{gallery[i * 3].image}}' %}); background-size: cover;">
+
+                    </a>
+                    <a href="#" class="estate-elem" style="background: url({% static '{{gallery[i * 3].image}}' %}); background-size: cover;">
+
+                    </a>
+                    <a href="#" class="estate-elem" style="background: url({% static '{{gallery[i * 3].image}}' %}); background-size: cover;">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    {% endif %}
+</div>
+{% endblock %}

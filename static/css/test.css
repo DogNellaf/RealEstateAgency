@@ -46,6 +46,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	color: white;
+	overflow-x: hidden;
 }
 
 #menu-bar {
@@ -1266,7 +1267,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 .estate .button {
 	height:10.08vh;
 	width:15.69vw;
-	margin-left:4.17vw;
+	margin-left:1vw;
 	margin-top:2vh;
 }
 
@@ -1284,7 +1285,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-	margin-left: 4.17vw;
+	margin-left: 1vw;
 	font-size: 3.8vh;
 	line-height: 4.42vh;
 	color: #FFFFFF;
@@ -1297,7 +1298,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	line-height: 2.53vh;
 	color: #FFFFFF;
 	margin-top: 3.16vh;
-	margin-left: 4.17vw;
+	margin-left: 1vw;
 }
 
 .estate .area-value {
@@ -1317,7 +1318,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	line-height: 2.53vh;
 	color: #FFFFFF;
 	margin-top: 1.01vh;
-	margin-left: 4.17vw;
+	margin-left: 1vw;
 }
 
 .estate .price-value {
@@ -1336,5 +1337,75 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	line-height: 3.5vh;
 	color: #FFFFFF;
 	margin-top: 3.16vh;
-	margin-left: 4.17vw;
+	margin-left: 1vw;
+	width: 38.68vw;
+}
+
+/* страница подкаталога */
+
+.subcatalog {
+	background-color: #18191b;
+	padding-top: 10.75vh;
+	width: 100vw;
+}
+
+.subcatalog .background {
+	height: 20vh;
+	width: 100vw;
+}
+
+.subcatalog .title {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4.55vh;
+	line-height: 5.94vh;
+	color: #FFFFFF;
+	margin-left: 10.07vw;
+	padding-top: 10.75vh;
+}
+
+.subcatalog .estate-elem-first {
+	display: inline-block;
+	margin-left: 10.21vw;
+	margin-top: 3.79vh;
+	height: 45.76vh;
+	width: 25.14vw;
+}
+
+.subcatalog .estate-elem {
+	display: inline-block;
+	margin-left: 2.08vw;
+	margin-top: 3.79vh;
+	height: 45.76vh;
+	width: 25.14vw;
+}
+
+.subcatalog .text-first {
+	margin-left: 10.21vw;
+	margin-top: 3.16vh;
+	margin-bottom: 8.09vh;
+	font-family: Roboto Slab;
+	font-size: 1.77vh;
+	line-height: 2.28vh;
+	color: rgba(255, 255, 255, 0.6);
+	display: inline-block;
+}
+
+.subcatalog .text-first a{
+	margin: 0;
+	padding: 0;
+}
+
+.subcatalog .text {
+	font-family: Roboto Slab;
+	font-size: 1.77vh;
+	line-height: 2.28vh;
+	color: rgba(255, 255, 255, 0.6);
+	display: inline-block;
+}
+
+.subcatalog .text a{
+	margin: 0;
+	padding: 0;
 }

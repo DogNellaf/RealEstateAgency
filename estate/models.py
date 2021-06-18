@@ -18,7 +18,7 @@ class Estate(models.Model):
     surface_area = models.FloatField('Площадь', default=0,  blank=True)
     price = models.FloatField('Цена', default=1000000)
     text = models.TextField('Описание', default="", max_length=50000)
-    type = models.ForeignKey(EstateType, default="", verbose_name="Тип", on_delete=models.CASCADE)
+    estate_type = models.ForeignKey(EstateType, default="", verbose_name="Тип", on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
@@ -26,6 +26,7 @@ class Estate(models.Model):
     class Meta:
         verbose_name = 'Недвижимость'
         verbose_name_plural = 'Объекты недвижимости'
+
 
 class Gallery(models.Model):
     image = models.ImageField(upload_to='gallery')
