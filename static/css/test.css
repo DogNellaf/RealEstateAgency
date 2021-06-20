@@ -212,6 +212,8 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	height:6.25vh;
 	width:13vw;
 	margin-left:4vw;
+	border: 1px white solid;
+	border-radius: 10px;
 }
 
 .index .houses-button p {
@@ -329,10 +331,13 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	margin-top:4vh;
 	margin-left:42.7vw;
 	width:14.5vw;
+	background: #333;
+	border: 1px solid #c93;
+	border-radius: 15px;
 }
 
 .index .example-button p{
-	padding-top:2.5vh;
+	padding-top:2.2vh;
 	text-align: center;
 	font-family: Roboto Slab;
 	font-size: 0.97vw;
@@ -349,9 +354,12 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .index .query-background {
-	margin-left:66.1vw;
-	height: 43.93vh;
-	width: 23vw;
+	position: absolute;
+	width: 23.06vw;
+	height: 43.86vh;
+	left: 66.6vw;
+	top: 333vh;
+	z-index: 999999;;
 }
 
 .index .query-button p{
@@ -508,7 +516,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	font-size:var(--font-size-l);
 	left:9.65vw;
 	position:absolute;
-	top:60.08vh;
+	top:45.5vh;
 }
 
 .about .query-button {
@@ -621,7 +629,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	height:9.45vh;
 	left:0;
 	position:absolute;
-	top:55.29vh;
+	top:40.5vh;
 	width:25.14vw;
 }
 
@@ -631,7 +639,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	height:9.45vh;
 	left:27.22vw;
 	position:absolute;
-	top:55.29vh;
+	top:40.5vh;
 	width:25.14vw;
 }
 
@@ -641,7 +649,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	height:9.45vh;
 	left:54.44vw;
 	position:absolute;
-	top:55.29vh;
+	top:40.5vh;
 	width:25.14vw;
 }
 
