@@ -1,639 +1,1419 @@
-<style>
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Montserrat:400|Roboto:400');
+/* импорт шрифтов */
 
-/* screen - katalog-kvartiry-1 */
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
 
-.katalog-kvartiry-1 {
-  background-color: #18191b;
-  height: 2121px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  overflow: hidden;
-  overflow-x: hidden;
-  position: relative;
-  width: 1440px;
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,500";
+
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,500|Roboto:400|Montserrat:400";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,500|Montserrat:400,500";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Montserrat:400";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Montserrat:400";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Montserrat:400";
+
+/* базовые */
+
+:root {
+--eerie-black:#18191b80;
+--white:#ffffffe6;
+--white-2:#fff;
+--font-size-l:18px;
+--font-size-m:16px;
+--font-size-s:14px;
+--font-size-xl:40px;
+--font-size-xs:10px;
+--font-family-montserrat:Montserrat,Helvetica;
+--font-family-roboto_slab:"Roboto Slab",Helvetica;
 }
-.katalog-kvartiry-1 .facebook-xZstl5 {
-  --z-index: 2;
-  background-color: transparent;
-  height: 28px;
-  left: 96px;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  width: 28px;
+
+body {
+	background: #18191b; 
+	width: 100vw;
+	height: 100vh;
+	color: white;
+	overflow-x: hidden;
 }
-.katalog-kvartiry-1 .footer-C61RwL {
-  --z-index: 0;
-  background-color: transparent;
-  height: 105px;
-  left: 0px;
-  opacity: 1;
-  position: absolute;
-  top: 2016px;
-  width: 1440px;
+
+#menu-bar {
+	position:fixed;
+	width: 100vw;
+	height: 10vh;
+	z-index:9999999;
 }
-.katalog-kvartiry-1 .frame-39-5eV5YA {
-  --z-index: 3;
-  background-color: transparent;
-  height: 74px;
-  left: 143px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: -2px;
-  width: 163px;
+
+a.small-logo {
+	display: inline-block;
+	height:100%;
+	padding-top: 0vh;
+	padding-left: 7vw;
 }
-.katalog-kvartiry-1 .group-27-iPe1yZ {
-  --z-index: 4;
-  background-color: transparent;
-  height: 28px;
-  left: 658px;
-  opacity: 1;
-  position: absolute;
-  top: 24px;
-  width: 124px;
+
+a.menu-bar-first {
+	display: inline-block;
+	text-decoration:none;
+	color: rgba(255, 255, 255, 1)!important;
+	padding-left:36vw;
+	text-align:center;
+	font-family: Roboto Slab;
+	font-size: 1.3vw;
+	padding-bottom: 11vh;
+	vertical-align: middle;
 }
-.katalog-kvartiry-1 .group-32-C61RwL {
-  --z-index: 3;
-  background-color: transparent;
-  height: 362px;
-  left: 147px;
-  opacity: 1;
-  position: absolute;
-  top: 410px;
-  width: 362px;
+
+a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
+	display: inline-block;
+	text-decoration:none;
+	color: rgba(255, 255, 255, 1)!important;
+	padding-left:2vw;
+	text-align:center;
+	font-family: Roboto Slab;
+	font-size: 1.3vw;
+	padding-bottom: 11vh;
+	vertical-align: middle;
 }
-.katalog-kvartiry-1 .group-41-CMrZ9S {
-  --z-index: 0;
-  background-color: transparent;
-  height: 74px;
-  left: 0px;
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  width: 167px;
+
+.footer {
+	width:100vw;
 }
-.katalog-kvartiry-1 .group-6-5eV5YA {
-  --z-index: 2;
-  background-color: transparent;
-  height: 24px;
-  left: 800px;
-  opacity: 1;
-  position: absolute;
-  top: 30px;
-  width: 500px;
+
+.footer-text {
+	font-family: Roboto Slab;
+	font-size: 0.9vh;
+	color: rgba(255, 255, 255, 0.5)!important;
+	line-height: 3vh;
+	letter-spacing: 0.05em;
+	text-align:center;
 }
-.katalog-kvartiry-1 .i14481210-gpwKP7 {
-  --z-index: 0;
-  background-color: transparent;
-  color: #ffffffe6;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 0px;
-  width: auto;
+
+.footer-logo {
+	display:inline-block;
+	height:auto;
+	margin-bottom: 0.01%;
+	margin-left:4.3vw;
+	width:4vw;
 }
-.katalog-kvartiry-1 .i14481211-gpwKP7 {
-  --z-index: 1;
-  background-color: transparent;
-  color: #ffffffe6;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 79px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 0px;
-  width: auto;
+
+.footer-icon-first {
+	display:inline-block;
+	padding-left: 25vw;
+	margin-top: -4vh;
+	vertical-align: middle;
 }
-.katalog-kvartiry-1 .i14481212-gpwKP7 {
-  --z-index: 2;
-  background-color: transparent;
-  color: #ffffffe6;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 174px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 0px;
-  width: auto;
+
+.footer-icon-first img{
+	width: 2.55vw;
+	height: 3.45vh;
 }
-.katalog-kvartiry-1 .i14481213-gpwKP7 {
-  --z-index: 3;
-  background-color: transparent;
-  color: #ffffffe6;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 278px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 0px;
-  width: auto;
+
+.footer-icon {
+	display:inline-block;
+	margin-top: -4vh;
+	vertical-align: middle;
 }
-.katalog-kvartiry-1 .i14481214-gpwKP7 {
-  --z-index: 4;
-  background-color: transparent;
-  color: #ffffffe6;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 398px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 0px;
-  width: auto;
+
+.footer-icon img{
+	width: 2.55vw;
+	height: 3.45vh;
 }
-.katalog-kvartiry-1 .image-aacgXn {
-  --z-index: 1;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/-------------1@2x.svg);
-  background-size: 100% 100%;
-  height: 37px;
-  left: 76px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 39px;
-  width: 96px;
+
+/* стили главной страницы */
+
+.index .dmitrov-background {
+	height:90vh;
+	width:100vw;
 }
-.katalog-kvartiry-1 .image-nsa3YJ {
-  --z-index: 0;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/----------1@2x.svg);
-  background-size: 100% 100%;
-  height: 31px;
-  left: 75px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 23px;
-  width: 84px;
+
+.index .big-logo {
+	width: 73vw;
+	height: 50vh;
+	padding-left:25.6vw;
+	padding-top:7.6vh;
 }
-.katalog-kvartiry-1 .instagram-xZstl5 {
-  --z-index: 0;
-  background-color: transparent;
-  height: 28px;
-  left: 0px;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  width: 28px;
+
+.index .agency-label {
+	height: 11vh;
+	width: 77.43vw;
+	padding-left:20.6vw;
 }
-.katalog-kvartiry-1 .line-1-5eV5YA {
-  --z-index: 1;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/line-1-1@1x.png);
-  background-size: 100% 100%;
-  height: 1px;
-  left: 719px;
-  opacity: 1;
-  position: absolute;
-  top: 161px;
-  width: 1px;
+
+.index .button-label {
+	margin-left:38vw;
+	height:8vh;
+	width:22.22vw;
 }
-.katalog-kvartiry-1 .line-4-iPe1yZ {
-  --z-index: 3;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/line-4@1x.svg);
-  background-size: 100% 100%;
-  height: 2px;
-  left: 0px;
-  opacity: 1;
-  position: absolute;
-  top: 66px;
-  width: 1440px;
+
+.index .button-label p, a{
+	text-decoration:none;
+	font-family: Roboto Slab;
+	font-weight: 300;
+	font-size: 2.52vh;
+	line-height: 2.4vh;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5.5vw;
+	padding-top: 2.7vh;
 }
-.katalog-kvartiry-1 .menu-bar-C61RwL {
-  --z-index: 18;
-  background-color: transparent;
-  height: 85px;
-  left: 0px;
-  opacity: 1;
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  width: 1440px;
+
+.index .houses-box {
+	display: table;
+	background-color:#18191b;
+	height:27.5vh;
+	overflow:hidden;
+	margin-top:12.3vh;
+	margin-right:0;
+	width:133vw;
 }
-.katalog-kvartiry-1 .rectangle-20-iPe1yZ {
-  --z-index: 0;
-  background-color: #0f0f0f;
-  height: 105px;
-  left: 0px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  width: 1440px;
+
+.index .houses {
+	display: table-cell;
+	vertical-align: middle;
+	height:27.5vh;
+	padding-left:0;
+	width:33.3vw;
 }
-.katalog-kvartiry-1 .rectangle-23-5eV5YA {
-  --z-index: 0;
-  background-color: #18191b80;
-  height: 85px;
-  left: 0px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  width: 1440px;
+
+.index .houses a{
+	color: #fff !important;
+	text-decoration:none;
 }
-.katalog-kvartiry-1 .rectangle-40-rXywx8 {
-  --z-index: 0;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-40@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 0px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  width: 362px;
+
+.index .houses-title {
+	font-family: Montserrat;
+	font-size: 1.3vw;
+	line-height: 1.9vw;
+	text-transform: uppercase;
+	margin-top:3.8vh;
+	margin-left:4vw;
 }
-.katalog-kvartiry-1 .rectangle-41-C61RwL {
-  --z-index: 7;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-41@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 539px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 410px;
-  width: 362px;
+
+.index .houses-text {
+	font-family: Montserrat;
+	font-size: 1.1vw;
+	line-height: 1.9vw;
+	margin-left:4vw;
+	padding-top:1vh;
 }
-.katalog-kvartiry-1 .rectangle-42-C61RwL {
-  --z-index: 11;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-42@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 931px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 410px;
-  width: 362px;
+
+.index .houses-button {
+	height:6.25vh;
+	width:13vw;
+	margin-left:4vw;
+	border: 1px white solid;
+	border-radius: 10px;
 }
-.katalog-kvartiry-1 .rectangle-43-C61RwL {
-  --z-index: 4;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-43@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 147px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 802px;
-  width: 362px;
+
+.index .houses-button p {
+	font-family: Roboto Slab;
+	font-size: 1.1vw;
+	padding-left: 2.8vw;
+	padding-top: 1.75vh;
+	color: rgba(255, 255, 255, 0.9);
 }
-.katalog-kvartiry-1 .rectangle-44-C61RwL {
-  --z-index: 8;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-44@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 539px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 802px;
-  width: 362px;
+
+.index .consult-background {
+	height:31vh;
+	margin-top:4vh;
+	width:100vw;
 }
-.katalog-kvartiry-1 .rectangle-45-C61RwL {
-  --z-index: 12;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-45@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 931px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 802px;
-  width: 362px;
+
+.index .consult-title {
+	height:2.7vh;
+	margin-left:27.2vw;
+	margin-top:4.2vh;
+	width:45.4vw;
 }
-.katalog-kvartiry-1 .rectangle-46-C61RwL {
-  --z-index: 5;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-46@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 147px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 1194px;
-  width: 362px;
+
+
+.index .consult-form {
+	height:6.6vh;
+	display: table;
 }
-.katalog-kvartiry-1 .rectangle-47-C61RwL {
-  --z-index: 9;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-46@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 539px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 1194px;
-  width: 362px;
+
+.index .consult-input1 {
+	margin-top: 7.4vh;
+	margin-left: 21vw;
+	padding-left: 1.3vw;
+	color: white;
+	width: 17.3vw;
+	resize: none;
+	outline: none;
+	background-color: rgba(0, 125, 215, 0);
 }
-.katalog-kvartiry-1 .rectangle-48-C61RwL {
-  --z-index: 13;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-46@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 931px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 1194px;
-  width: 362px;
+
+::-webkit-input-placeholder {
+	font-size: 0.97vw;
 }
-.katalog-kvartiry-1 .rectangle-49-C61RwL {
-  --z-index: 6;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-46@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 147px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 1586px;
-  width: 362px;
+
+.input .consult-cell {
+	display: table-cell;
+	vertical-align: middle;
 }
-.katalog-kvartiry-1 .rectangle-50-C61RwL {
-  --z-index: 10;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-46@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 539px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 1586px;
-  width: 362px;
+
+.index .consult-input2 {
+	margin-left: 2.7vw;
+	padding-left: 0.69vw;
+	color: white;
+	width: 17.3vw;
+	resize: none;
+	outline: none;
+	border: 0px solid;
+	background-color: rgba(0, 125, 215, 0);
 }
-.katalog-kvartiry-1 .rectangle-51-C61RwL {
-  --z-index: 14;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/rectangle-46@2x.png);
-  background-size: 100% 100%;
-  height: 362px;
-  left: 931px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 1586px;
-  width: 362px;
+
+.index .consult-button {
+	margin-left: 1.38vw;
+	width: 17.3vw;
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+	outline: none !important;
+	border: 0!important;
 }
-.katalog-kvartiry-1 .shutterstock131654735-1-C61RwL {
-  --z-index: 1;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/shutterstock-131654735-1@1x.png);
-  background-size: 100% 100%;
-  height: 218px;
-  left: 2px;
-  mix-blend-mode: normal;
-  object-fit: cover;
-  opacity: 1;
-  position: absolute;
-  top: 85px;
-  width: 1436px;
+
+.index .consult-text {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.659vw;
+	line-height: 1.2vh;
 }
-.katalog-kvartiry-1 .textlabel-C61RwL {
-  --z-index: 2;
-  background-color: transparent;
-  color: #ffffff;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 147px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 170px;
-  width: auto;
+
+.index .consult-button {
+	height:7.8vh;
+	width:14.3vw;
 }
-.katalog-kvartiry-1 .textlabel-VMr6Om {
-  --z-index: 16;
-  background-color: transparent;
-  color: #ffffff99;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 217px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 328px;
-  width: auto;
+
+.index .consult-checkbox {
+	height:1.3vh;
+	width:1vw;
+	margin-left: 2.77vw;
 }
-.katalog-kvartiry-1 .vector-1-5eV5YA {
-  --z-index: 4;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/vector-1-3@1x.svg);
-  background-size: 100% 100%;
-  height: 1px;
-  left: 0px;
-  opacity: 1;
-  position: absolute;
-  top: 84px;
-  width: 1440px;
+
+.index .example-title {
+	font-family: Roboto Slab;
+	font-size: 2.7vw;
+	line-height: 4.9vh;
+	color: rgba(255, 255, 255, 0.9);
+	margin-left:39.3vw;
+	margin-top:4vh;
 }
-.katalog-kvartiry-1 .vector-3y9sZQ {
-  --z-index: 0;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/vector-1@2x.svg);
-  background-size: 100% 100%;
-  height: 26px;
-  left: 1px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 1px;
-  width: 26px;
+
+.index .example-house1 {
+	height:46vh;
+	width:25.2vw;
+	margin-top:5.83vh;
+	margin-left:10.3vw;
 }
-.katalog-kvartiry-1 .vector-C9oVer {
-  --z-index: 0;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/vector-3@2x.svg);
-  background-size: 100% 100%;
-  height: 24px;
-  left: 2px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 2px;
-  width: 24px;
+
+.index .example-house2 {
+	height:46vh;
+	width:25.2vw;
+	margin-top:5.88vh;
+	padding-left:2vw;
 }
-.katalog-kvartiry-1 .vector-al5l8B {
-  --z-index: 0;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/vector@2x.svg);
-  background-size: 100% 100%;
-  height: 24px;
-  left: 2px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 2px;
-  width: 24px;
+
+.index .example-button {
+	height:6vh;
+	margin-top:4vh;
+	margin-left:42.7vw;
+	width:14.5vw;
+	background: #333;
+	border: 1px solid #c93;
+	border-radius: 15px;
 }
-.katalog-kvartiry-1 .whats-app-xZstl5 {
-  --z-index: 1;
-  background-color: transparent;
-  height: 28px;
-  left: 48px;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  width: 28px;
+
+.index .example-button p{
+	padding-top:2.2vh;
+	text-align: center;
+	font-family: Roboto Slab;
+	font-size: 0.97vw;
+	line-height: 1.66vh;
+	color: rgba(255, 255, 255, 0.9);
 }
-.katalog-kvartiry-1 .x-C61RwL {
-  --z-index: 15;
-  background-color: transparent;
-  color: #ffffff99;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 147px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 328px;
-  width: auto;
+
+.index .query-button {
+	z-index: 999999;
+	height:4vh;
+	margin-left:4.16vw;
+	margin-top: 30vh;
+	width:14.5vw;
 }
-.katalog-kvartiry-1 .x-VMr6Om {
-  --z-index: 17;
-  background-color: transparent;
-  color: #ffffff99;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  height: auto;
-  left: 277px;
-  letter-spacing: 0.00px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 328px;
-  width: auto;
+
+.index .query-background {
+	position: absolute;
+	width: 23.06vw;
+	height: 43.86vh;
+	left: 66.6vw;
+	top: 333vh;
+	z-index: 999999;;
 }
-.katalog-kvartiry-1 .x1m-gh-bb-vn-m0-ovebg-preview-2-iPe1yZ {
-  --z-index: 2;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/1m-ghbbvnm0-removebg-preview-2@2x.png);
-  background-size: 100% 100%;
-  height: 58px;
-  left: 112px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 8px;
-  width: 128px;
+
+.index .query-button p{
+	font-family: Roboto Slab;
+	font-size: 1.29vh;
+	line-height: 1.66vh;
+	text-align: center;
+	padding-top: 1.01vh;
+	color: rgba(255, 255, 255, 0.9);
 }
-.katalog-kvartiry-1 .x1m-gh-bb-vn-m0-ovebg-preview-2-nsa3YJ {
-  --z-index: 2;
-  background-color: transparent;
-  background-image: url(https://cdn.animaapp.com/projects/60cbb77dd9720ba001810326/img/1m-ghbbvnm0-removebg-preview-2-5@2x.png);
-  background-size: 100% 100%;
-  height: 80px;
-  left: -4px;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  top: 1px;
-  width: 91px;
+
+.index .church {
+	height:80vh;
+	left:64.652vw;
+	position:absolute;
+	top:100vh;
+	width:35.34vw;
 }
-.katalog-kvartiry-1 .x2016-2020-iPe1yZ {
-  --z-index: 1;
-  background-color: transparent;
-  color: #ffffff;
-  font-family: 'Roboto Slab', Helvetica;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 300;
-  height: auto;
-  left: 561px;
-  letter-spacing: 0.50px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  opacity: 1;
-  position: absolute;
-  text-align: left;
-  top: 80px;
-  width: auto;
+
+.index .title-label {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 5vh;
+	line-height: 4.9vh;
+	margin-left:9.93vw;
+	margin-top:19.16vh;
 }
-</style>
+
+.index .text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.3vh;
+	line-height: 3.4vh;
+	padding-top:2.31vh;
+	margin-left:10.27vw;
+	text-align:left;
+	width:45.13vw;
+	color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.index .cells {
+	display: table;
+}
+
+.index .label-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.index .label-10 {
+	margin-left:9.72vw;
+	margin-top:4.15vh;
+	width: 8.61vw;
+	height: 13.97vh;
+}
+
+.index .label-1000 {
+	margin-left:3.47vw;
+	margin-top:4.4vh;
+	width: 16.25vw;
+	height: 13.97vh;
+}
+
+.index .label-50 {
+	margin-left:3.47vw;
+	margin-top:4.4vh;
+	width: 16.25vw;
+	height: 13.97vh;
+}
+
+.index .text-10 {
+	font-family: Montserrat;
+	font-size: 1.79vh;
+	line-height: 2.14vh;
+	text-align: center;
+	margin-left:7.29vw;
+	width:13.54vw;
+	color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.index .text-1000 {
+	font-family: Montserrat;
+	font-size: 1.79vh;
+	line-height: 2.14vh;
+	text-align: center;
+	margin-left:4.86vw;
+	width:13.54vw;
+	color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.index .text-50 {
+	font-family: Montserrat;
+	font-size: 1.79vh;
+	line-height: 2.14vh;
+	text-align: center;
+	margin-left:4.86vw;
+	width:13.54vw;
+	color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.index .map {
+	height: 60vh;
+	width:100vw;
+	margin-top: 1.85vh;
+}
+
+/* стили страницы "О нас" */
+
+.about .workers-box {
+	height:100vh;
+	left:10.2vw;
+	position:absolute;
+	top:140.3vh;
+	width:79.86vw;
+}
+
+.about .name1 {
+	z-index: 3;
+	background-color:transparent;
+	height:2.27vh;
+	left:19.375vw;
+	position:absolute;
+	top:197.97vh;
+	width:6.875vw;
+}
+
+.about .name2 {
+	z-index: 3;
+	background-color:transparent;
+	height:2.27vh;
+	left:46.25vw;
+	position:absolute;
+	top:197.23vh;
+	width:7.57vw;
+}
+
+.about .name3 {
+	z-index: 3;
+	background-color:transparent;
+	height:2.02vh;
+	left:75.21vw;
+	position:absolute;
+	top:197.36vh;
+	width:3.96vw;
+}
+
+.about .worker1-type {
+	z-index: 2;
+	background-color:transparent;
+	color:var(--white-2);
+	font-family:var(--font-family-roboto_slab);
+	font-size:var(--font-size-l);
+	left:9.65vw;
+	position:absolute;
+	top:45.5vh;
+}
+
+.about .query-button {
+	margin-left: 42.15vw;
+	margin-top: -1.26vh;
+	height:7.43vh;
+	width:16.67vw;
+}
+
+.about .query-button p{
+	text-align: center;
+	padding-top: 2.52vh;
+	font-family: Roboto Slab;
+	font-size: 1.76vh;
+	line-height: 2.27vh;
+	color: #FFFFFF;
+}
+
+.about #info-background {
+	height:88.16vh;
+	width:42.15vw;
+}
+
+.about .info-title {
+	display: block;
+	margin-left: 6.94vw;
+	padding-top: 7.56vh;
+	font-family: Roboto Slab;
+	font-size: 5.04vh;
+	line-height: 6.68vh;
+	color: #FFFFFF;
+}
+
+.about .info-text {
+	width: 37.64vw;
+	margin-left: 6.94vw;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.52vh;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.about .info-text-bold {
+	width: 37.64vw;
+	margin-left: 6.94vw;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.52vh;
+	color: #FFFFFF;
+}
+
+.about .query-background {
+	background-color:#fab702;
+	box-shadow:0 4px 4px #10101242;
+	height:9.82vh;
+	width:100vw;
+}
+
+.about .worker1 {
+	height:49.87vh;
+	left:0;
+	position:absolute;
+	top:14.86vh;
+	width:25.14vw;
+}
+
+.about .worker2 {
+	height:49.87vh;
+	left:0;
+	position:absolute;
+	top:76.07vh;
+	width:25.14vw;
+}
+
+.about .worker3 {
+	height:49.87vh;
+	left:27.22vw;
+	position:absolute;
+	top:14.86vh;
+	width:25.14vw;
+}
+
+.about .worker5 {
+	height:49.87vh;
+	left:54.44vw;
+	position:absolute;
+	top:14.86vh;
+	width:25.14vw;
+}
+
+.about .worker4 {
+	height:49.87vh;
+	left:27.22vw;
+	position:absolute;
+	top:76.07vh;
+	width:25.14vw;
+}
+
+.about .worker6 {
+	height:49.87vh;
+	left:54.44vw;
+	position:absolute;
+	top:76.07vh;
+	width:25.14vw;
+}
+
+.about .worker1-name {
+	z-index: 1;
+	background-color:var(--eerie-black);
+	height:9.45vh;
+	left:0;
+	position:absolute;
+	top:40.5vh;
+	width:25.14vw;
+}
+
+.about .worker2-name {
+	z-index: 1;
+	background-color:var(--eerie-black);
+	height:9.45vh;
+	left:27.22vw;
+	position:absolute;
+	top:40.5vh;
+	width:25.14vw;
+}
+
+.about .worker3-name {
+	z-index: 1;
+	background-color:var(--eerie-black);
+	height:9.45vh;
+	left:54.44vw;
+	position:absolute;
+	top:40.5vh;
+	width:25.14vw;
+}
+
+.about .worker4-name {
+	z-index: 1;
+	background-color:var(--eerie-black);
+	height:9.45vh;
+	left:54.44vw;
+	position:absolute;
+	top:116.5vh;
+	width:25.14vw;
+}
+
+.about .worker5-name {
+	z-index: 1;
+	background-color:var(--eerie-black);
+	height:9.45vh;
+	left:27.22vw;
+	position:absolute;
+	top:116.5vh;
+	width:25.14vw;
+}
+
+.about .worker6-name {
+	z-index: 1;
+	background-color:var(--eerie-black);
+	height:9.45vh;
+	left:0;
+	position:absolute;
+	top:116.5vh;
+	width:25.14vw;
+}
+
+.about .background1 {
+	background-color:transparent;
+	height:28.59vh;
+	left:16.81vw;
+	position:absolute;
+	top:196.85vh;
+	width:66.46vw;
+}
+
+.about .background2 {
+	background-color:transparent;
+	height:83.12vh;
+	left:88.06vw;
+	position:absolute;
+	top:162.59vh;
+	width:29.72vw;
+}
+
+.about .background3 {
+	background-color:transparent;
+	height:27.33vh;
+	left:45.9vw;
+	position:absolute;
+	top:195.09vh;
+	width:8.19vw;
+}
+
+.about .background4 {
+	background-color:transparent;
+	height:83.12vh;
+	left:0.78vw;
+	position:absolute;
+	top:162.59vh;
+	width:29.72vw;
+}
+
+.about .title-background {
+	height:27.46vh;
+	width:100vw;
+}
+
+.about .title-text {
+	padding-top: 11.59vh;
+	padding-left: 10.21vw;
+	font-family: Roboto Slab;
+	font-size: 5.04vh;
+	line-height: 6.68vh;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.about .workers-title {
+	margin-left: 38.54vw;
+	margin-top: 3.65vh;
+	font-family: Roboto Slab;
+	font-size: 5.04vh;
+	line-height: 6.68vh;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* стили страницы "Каталог"*/
+
+.katalog .dachi-image {
+	height:29.22vh;
+	left:16.67vw;
+	position:absolute;
+	top:24.31vh;
+	width:33.33vw;
+}
+
+.katalog .arenda-image {
+	height:29.22vh;
+	left:50vw;
+	position:absolute;
+	top:24.31vh;
+	width:33.33vw;
+}
+
+.katalog .kvartiri-image {
+	height:29.22vh;
+	left:50vw;
+	position:absolute;
+	top:53.53vh;
+	width:33.33vw;
+}
+
+.katalog .land-image {
+	height:29.22vh;
+	left:16.67vw;
+	position:absolute;
+	top:53.53vh;
+	width:33.33vw;
+}
+
+.katalog .dachi-button {
+	border-radius:10px;
+	height:5.29vh;
+	left:20.83vw;
+	position:absolute;
+	top:42.82vh;
+	width:11.53vw;
+}
+
+.katalog .dachi-button p{
+	padding-top: 1.26vh;
+	text-align: center;
+	font-family: Roboto Slab;
+	font-size: 2.02vh;
+	line-height: 2.64vh;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.katalog .land-button {
+	border-radius:10px;
+	height:5.29vh;
+	left:20.83vw;
+	position:absolute;
+	top:70.65vh;
+	width:11.53vw;
+}
+
+.katalog .land-button p{
+	padding-top: 1.26vh;
+	text-align: center;
+	font-family: Roboto Slab;
+	font-size: 2.02vh;
+	line-height: 2.64vh;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.katalog .kvartiri-button {
+	height:5.29vh;
+	left:54.1vw;
+	position:absolute;
+	top:70.65vh;
+	width:11.53vw;
+}
+
+.katalog .kvartiri-button p{
+	padding-top: 1.26vh;
+	text-align: center;
+	font-family: Roboto Slab;
+	font-size: 2.02vh;
+	line-height: 2.64vh;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.katalog .arenda-button {
+	background-color:transparent;
+	border-radius:10px;
+	height:5.29vh;
+	left:54.1vw;
+	position:absolute;
+	top:42.82vh;
+	width:11.53vw;
+}
+
+.katalog .arenda-button p{
+	padding-top: 1.26vh;
+	text-align: center;
+	font-family: Roboto Slab;
+	font-size: 2.02vh;
+	line-height: 2.64vh;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.katalog .dachi-title {
+	font-family: Montserrat;
+	font-size: 2.52vh;
+	line-height: 3.02vh;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	left:20.42vw;
+	position:absolute;
+	top:28.97vh;
+}
+
+.katalog .index-text {
+	font-family: Roboto Slab;
+	font-size: 1.76vh;
+	line-height: 2.27vh;
+	color: rgba(255, 255, 255, 0.6);
+	left:10.21vw;
+	position:absolute;
+	text-align:left;
+	top:13.85vh;
+}
+
+.katalog .land-title {
+	font-family: Montserrat;
+	font-size: 2.52vh;
+	line-height: 3.02vh;
+	text-align: center;
+	color: #FFFFFF;
+	left:20.42vw;
+	position:absolute;
+	top:58.19vh;
+}
+
+.katalog .kvartiri-title {
+	font-family: Montserrat;
+	font-size: 2.52vh;
+	line-height: 3.02vh;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	left:54.1vw;
+	position:absolute;
+	top:58.19vh;
+}
+
+.katalog .kvartiri-label {
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.52vh;
+	color: #FFFFFF;
+	left:54.1vw;
+	position:absolute;
+	top:62.47vh;
+}
+
+.katalog .arenda-label {
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.52vh;
+	color: #FFFFFF;
+	left:54.1vw;
+	position:absolute;
+	top:33.88vh;
+}
+
+.katalog .dachi-label {
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.52vh;
+	color: #FFFFFF;
+	left:20.42vw;
+	position:absolute;
+	top:33.38vh;
+}
+
+.katalog .arenda-title {
+	font-family: Montserrat;
+	font-size: 2.52vh;
+	line-height: 3.02vh;
+	text-align: center;
+	color: #FFFFFF;
+	left:54.1vw;
+	position:absolute;
+	top:28.97vh;
+}
+
+.katalog .land-label {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.02vh;
+	line-height: 2.52vh;
+	color: #FFFFFF;
+	left:20.42vw;
+	position:absolute;
+	text-align:left;
+	top:62.47vh;
+}
+
+/* стили страницы услуг */
+
+.services .info-button {
+	height:10.08vhvw;
+	margin-left:42.15vw;
+	margin-top:6.05vh;
+	width:15.69vw;
+	padding-bottom: 3.78vh;
+}
+
+.services .info-button p{
+	font-family: Roboto Slab;
+	font-size: 1.76vh;
+	line-height: 2.27vh;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 3.78vh;
+}
+
+.services .info-photo1 {
+	display: inline;
+	height:57.93vh;
+	width:44.1vw;
+}
+
+.services .rectangle-72-C61RwL {
+	background-color:#1a1b1d;
+	height:50.38vh;
+	left:44.24vw;
+	position:absolute;
+	top:96.1vh;
+	width:55.76vw;
+}
+
+.services .background {
+	height:27.46vh;
+	width:100vw;
+}
+
+.services .title {
+	font-family: Roboto Slab;
+	font-size: 4.53vh;
+	line-height: 5.92vh;
+	color: #FFFFFF;
+	padding-left:10.21vw;
+	padding-top:10.71vh;
+}
+
+.services .info-text2 {
+	font-family: Montserrat;
+	font-size: 1.89vh;
+	line-height: 3vh;
+	color: #FFFFFF;
+	margin-top: 16.5vh;
+	margin-left: 6.81vw;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.services li{
+	list-style-type: disc;
+	line-height: 3vh;
+	list-style-position: inside;
+}
+
+.services .info-text3 {
+	font-family: Montserrat;
+	font-size: 1.89vh;
+	line-height: 2.27vh;
+	color: #FFFFFF;
+	margin-top: 19.14vh;
+	margin-left: 10.21vw;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.services .info-text-first {
+	font-family: Montserrat;
+	font-size: 2.27vh;
+	line-height: 2.77vh;
+	color: #FFFFFF;
+	margin-top: 3.27vh;
+	margin-left: 10.21vw;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.services .info-text {
+	font-family: Montserrat;
+	font-size: 1.89vh;
+	line-height: 2.27vh;
+	color: #FFFFFF;
+	margin-top: 3.15vh;
+	margin-left: 10.21vw;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.services .info-text-label {
+	font-family: Roboto Slab;
+	font-size: 5.04vh;
+	line-height: 6.68vh;
+	color: #FFFFFF;
+	margin-top: 7.56vh;
+	margin-left: 10.21vw;
+}
+
+
+
+/* страница "Вакансии" */
+
+.jobopenings .button {
+	height:10.08vh;
+	margin-left:41.32vw;
+	margin-top:4.45vh;
+	width:17.36vw;
+}
+
+.jobopenings .button p{
+	font-family: Roboto Slab;
+	font-size: 1.76vh;
+	line-height: 2.27vh;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 3.78vh;
+}
+
+.jobopenings .background {
+	height:27.46vh;
+	width:100vw;
+}
+
+.jobopenings .title {
+	font-family: Roboto Slab;
+	font-size: 4.53vh;
+	line-height: 5.92vh;
+	color: #FFFFFF;
+	padding-top: 10.71vh;
+	margin-left: 12vw;
+}
+
+.jobopenings .text {
+	font-family: Montserrat;
+	font-size: 2.27vh;
+	line-height: 2.77vh;
+	color: #FFFFFF;
+	margin-left: 10vw;
+	padding-top: 8.19vh;
+	width: 79.38vw;
+	line-height: 2.76vh;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+/* страница "Контакты" */
+
+.contacts .button {
+	height:10.08vh;
+	left:42.15vw;
+	position:absolute;
+	top:146.6vh;
+	width:15.69vw;
+}
+
+.contacts .button {
+	font-family: Roboto Slab;
+	font-size: 1.76vh;
+	line-height: 2.27vh;
+	color: #FFFFFF;
+	padding-top: 3.88vh;
+	padding-left: 3.73vw;
+}
+
+.contacts .background {
+	height:27.46vh;
+	width:100vw;
+}
+
+.contacts .title {
+	font-family: Roboto Slab;
+	font-size: 4.53vh;
+	line-height: 5.92vh;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding-top: 10.71vh;
+	padding-left: 10.07vw;
+}
+
+.contacts .address-title {
+	font-family: Roboto Slab;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
+	color: #FFFFFF;
+	left:10.21vw;
+	position:absolute;
+	top:50.76vh;
+}
+
+.contacts .mobile-title {
+	font-family: Roboto Slab;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
+	color: #FFFFFF;
+	left:10.21vw;
+	position:absolute;
+	top:60.71vh;
+}
+
+.contacts .time-title {
+	font-family: Roboto Slab;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
+	color: #FFFFFF;
+	left:10.21vw;
+	position:absolute;
+	top:71.41vh;
+}
+
+.contacts .map {
+	height:60.2vh;
+	left:0.28vw;
+	position:absolute;
+	top:82.87vh;
+	width:100vw;
+}
+
+.contacts .address {
+	font-family: Roboto Slab;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
+	color: rgba(255, 255, 255, 0.9);
+	left:21.74vw;
+	position:absolute;
+	text-align:left;
+	top:50.76vh;
+}
+
+.contacts .mobile-num2 {
+	font-family: Roboto Slab;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
+	color: rgba(255, 255, 255, 0.9);
+	left:21.74vw;
+	position:absolute;
+	top:65.74vh;
+}
+
+.contacts .mobile-num1 {
+	font-family: Roboto Slab;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
+	color: rgba(255, 255, 255, 0.9);
+	left:21.74vw;
+	position:absolute;
+	top:60.71vh;
+}
+
+.contacts .time {
+	font-family: Roboto Slab;
+	font-size: 3.02vh;
+	line-height: 4.03vh;
+	color: rgba(255, 255, 255, 0.9);
+	left:21.74vw;
+	position:absolute;
+	top:71.41vh;
+}
+
+
+/* карточка товара */
+
+.estate {
+	padding-top: 20vh; 
+	background-color: #18191b;
+	height: 130vh;
+}
+
+.estate .back-text-arrow {
+	height: 2.15vh;
+	width: 8.19vw;
+	height: 2.15vh;
+	width: 8.19vw;
+	left: 7.92vw;
+	position: absolute;
+	top: 14.16vh;
+}
+
+.estate .main-photo {
+	height: 82.17vh;
+	width: 42.15vw;
+}
+
+.estate .gallery-first {
+	display: inline-block;
+	height: 11vh;
+	width: 6vw;
+	margin-left: 5.42vw;
+	margin-top: 2.78vh;
+	border: 0.065vh white solid;
+	vertical-align: middle;
+}
+.estate .gallery {
+	display: inline-block;
+	height: 11vh;
+	width: 6vw;
+	margin-left: 0;
+	margin-top: 2.78vh;
+	border: 0.065vh white solid;
+	vertical-align: middle;
+}
+
+.estate .arrow {
+	display: inline-block;
+	background-color: transparent;
+	border: 0.13vh solid #ffffffcc;
+	border-radius: 2.53vh;
+	height: 5.06vh;
+	margin-left: 2vw;
+	margin-top: 2.78vh;
+	vertical-align: middle;
+	width: 2.78vw;
+}
+
+.estate .arrow-element {
+	height: 2.4vh;
+	margin-top: 1.26vh;
+	margin-left: 0.97vw;
+	width: 0.7vw;
+}
+
+.estate .button {
+	height:10.08vh;
+	width:15.69vw;
+	margin-left:1vw;
+	margin-top:2vh;
+}
+
+.estate .button p{
+	font-family: Roboto Slab;
+	font-size: 1.77vh;
+	line-height: 2.28vh;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding-left:3vw;
+	padding-top:4vh;
+}
+
+.estate .title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	margin-left: 1vw;
+	font-size: 3.8vh;
+	line-height: 4.42vh;
+	color: #FFFFFF;
+}
+
+.estate .area {
+	display:inline-block;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.53vh;
+	color: #FFFFFF;
+	margin-top: 3.16vh;
+	margin-left: 1vw;
+}
+
+.estate .area-value {
+	display:inline-block;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.53vh;
+	color: #FFFFFF;
+	margin-top: 3.16vh;
+	margin-left: 1.18vw;
+}
+
+.estate .price {
+	display:inline-block;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.53vh;
+	color: #FFFFFF;
+	margin-top: 1.01vh;
+	margin-left: 1vw;
+}
+
+.estate .price-value {
+	display:inline-block;
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 2.53vh;
+	color: #FFFFFF;
+	margin-top: 1.01vh;
+	margin-left: 3.54vw;
+}
+
+.estate .text {
+	font-family: Montserrat;
+	font-size: 2.02vh;
+	line-height: 3.5vh;
+	color: #FFFFFF;
+	margin-top: 3.16vh;
+	margin-left: 1vw;
+	width: 38.68vw;
+}
+
+/* страница подкаталога */
+
+.subcatalog {
+	background-color: #18191b;
+	padding-top: 10.75vh;
+	width: 100vw;
+}
+
+.subcatalog .background {
+	height: 20vh;
+	width: 100vw;
+}
+
+.subcatalog .title {
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4.55vh;
+	line-height: 5.94vh;
+	color: #FFFFFF;
+	margin-left: 10.07vw;
+	padding-top: 10.75vh;
+}
+
+.subcatalog .estate-elem-first {
+	display: inline-block;
+	margin-left: 10.21vw;
+	margin-top: 3.79vh;
+	height: 45.76vh;
+	width: 25.14vw;
+}
+
+.subcatalog .estate-elem {
+	display: inline-block;
+	margin-left: 2.08vw;
+	margin-top: 3.79vh;
+	height: 45.76vh;
+	width: 25.14vw;
+}
+
+.subcatalog .text-first {
+	margin-left: 10.21vw;
+	margin-top: 3.16vh;
+	margin-bottom: 8.09vh;
+	font-family: Roboto Slab;
+	font-size: 1.77vh;
+	line-height: 2.28vh;
+	color: rgba(255, 255, 255, 0.6);
+	display: inline-block;
+}
+
+.subcatalog .text-first a{
+	margin: 0;
+	padding: 0;
+}
+
+.subcatalog .text {
+	font-family: Roboto Slab;
+	font-size: 1.77vh;
+	line-height: 2.28vh;
+	color: rgba(255, 255, 255, 0.6);
+	display: inline-block;
+}
+
+.subcatalog .text a{
+	margin: 0;
+	padding: 0;
+}
