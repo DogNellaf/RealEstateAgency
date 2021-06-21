@@ -38,3 +38,21 @@ class Gallery(models.Model):
     class Meta:
         verbose_name = 'Галерея'
         verbose_name_plural = 'Галереи'
+
+class Query(models.Model):
+    name = models.CharField('Имя', default="",  max_length=100)
+    mobile = models.CharField('Имя', default="",  max_length=100)
+    sell = models.BooleanField('Продать недвижимость', blank=True, default=False)
+    legalization = models.BooleanField('Оформление', blank=True, default=False)
+    buy = models.BooleanField('Купить недвижимость', blank=True, default=False)
+    cadastre = models.BooleanField('Кадастровые услуги', blank=True, default=False)
+    rent = models.BooleanField('Сдать недвижимость', blank=True, default=False)
+    juridical = models.BooleanField('Юридическое сопровождение', blank=True, default=False)
+    other = models.TextField('Другой вопрос', blank=True, default="", max_length=50000)
+
+    def __str__(self):
+        return f"{self.name} {self.mobile}"
+
+    class Meta:
+        verbose_name = 'Заявка'
+        verbose_name_plural = 'Заявки'

@@ -10,6 +10,11 @@
 		<title>{% block title %}{% endblock %}</title>
 		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
       	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<script>
+		   	function showQuery() {
+				document.getElementById('query-box').style.display = "inline";
+		   	}
+		</script>
 	</head>
 	<body>
 		<div id="menu-bar" style="background-image: url({% static 'png/Rectangle 23.png' %});">
@@ -23,6 +28,32 @@
 			<a href="{% url 'contacts'%}" class="menu-bar-a">Контакты</a>
 		</div>
 		{% block content %}{% endblock %}
+		<form id="query-box" style="display: none!important" class="query" method="POST">
+			<img class="background" src="{% static 'png/background.png' %}">
+			<input type="submit" class="button" value="Оставить заявку">
+			<div class="approval">Согласие на обработку данных</div>
+			<img class="line1" src="{% static 'svg/line-2@2x.svg' %}">
+			<img class="line2" src="{% static 'svg/line-3@2x.svg' %}">
+			<input name="name" type="text" class="name" placeholder="Имя">
+			<input name="mobile" type="text" class="mobile" placeholder="+7 (999) 999 99 99">
+			<input name="approval" type="checkbox" class="input1" src="{% static 'svg/rectangle-27@2x.svg' %}">
+			<input name="sell" type="checkbox" class="input2" src="{% static 'svg/rectangle-27@2x.svg' %}">
+			<input name="legalization" type="checkbox" class="input3" src="{% static 'svg/rectangle-27@2x.svg' %}">
+			<input name="buy" type="checkbox" class="input4" src="{% static 'svg/rectangle-27@2x.svg' %}">
+			<input name="cadastre" type="checkbox" class="input5" src="{% static 'svg/rectangle-27@2x.svg' %}">
+			<input name="rent" type="checkbox" class="input6" src="{% static 'svg/rectangle-27@2x.svg' %}">
+			<input name="juridical" type="checkbox" class="input7" src="{% static 'svg/rectangle-27@2x.svg' %}">
+
+			<textarea name="other" class="other" placeholder = "Другой вопрос..."></textarea>
+			<img class="title" src="{% static 'svg/-------------------------------------@2x.svg' %}">
+			<div class="reason-text" >Выбрать причину заявки</div>
+			<div class="sell">Продать недвижимость</div>
+			<div class="legalization">Оформление</div>
+			<div class="buy">Купить недвижимость</div>
+			<div class="cadastre">Кадастровые услуги</div>
+			<div class="rent">Сдать недвижимость</div>
+			<div class="juridical">Юридическое сопровождение</div>
+		</form>
 		<div class="footer" style="background-color:#0f0f0f;">
 			<img class="footer-logo" src="{% static 'png/1m-ghbbvnm0-removebg-preview-2@2x.png' %}">
 			<div class="footer-icon-first">

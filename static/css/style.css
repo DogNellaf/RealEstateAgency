@@ -275,13 +275,15 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .index .consult-button {
+	font-family: Roboto Slab;
+	font-size: 1.75vh;
+	line-height: 2.26vh;
+	color: rgba(255, 255, 255, 0.9);
 	margin-left: 1.38vw;
 	width: 17.3vw;
-    outline-style: none;
-    outline-width: 0px !important;
-    outline-color: none !important;
-	outline: none !important;
-	border: 0!important;
+	background: #333;
+	border: 1px solid #c93;
+	border-radius: 10px;
 }
 
 .index .consult-text {
@@ -333,7 +335,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	width:14.5vw;
 	background: #333;
 	border: 1px solid #c93;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 .index .example-button p{
@@ -345,24 +347,24 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	color: rgba(255, 255, 255, 0.9);
 }
 
-.index .query-button {
-	z-index: 999999;
+.query-button {
+	z-index: 999;
 	height:4vh;
 	margin-left:4.16vw;
 	margin-top: 30vh;
 	width:14.5vw;
 }
 
-.index .query-background {
+.query-background {
 	position: absolute;
 	width: 23.06vw;
 	height: 43.86vh;
 	left: 66.6vw;
 	top: 333vh;
-	z-index: 999999;;
+	z-index: 999;
 }
 
-.index .query-button p{
+.query-button p{
 	font-family: Roboto Slab;
 	font-size: 1.29vh;
 	line-height: 1.66vh;
@@ -519,14 +521,14 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	top:45.5vh;
 }
 
-.about .query-button {
+.about .about-query-button {
 	margin-left: 42.15vw;
 	margin-top: -1.26vh;
 	height:7.43vh;
 	width:16.67vw;
 }
 
-.about .query-button p{
+.about .about-query-button p{
 	text-align: center;
 	padding-top: 2.52vh;
 	font-family: Roboto Slab;
@@ -568,7 +570,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	color: #FFFFFF;
 }
 
-.about .query-background {
+.about .about-query-background {
 	background-color:#fab702;
 	box-shadow:0 4px 4px #10101242;
 	height:9.82vh;
@@ -1001,7 +1003,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	font-size: 1.89vh;
 	line-height: 3vh;
 	color: #FFFFFF;
-	margin-top: 16.5vh;
+	margin-top: 12vh;
 	margin-left: 6.81vw;
 	color: rgba(255, 255, 255, 0.7);
 }
@@ -1257,7 +1259,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	display: inline-block;
 	background-color: transparent;
 	border: 0.13vh solid #ffffffcc;
-	border-radius: 2.53vh;
+	border-radius: 10px;
 	height: 5.06vh;
 	margin-left: 2vw;
 	margin-top: 2.78vh;
@@ -1416,4 +1418,261 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 .subcatalog .text a{
 	margin: 0;
 	padding: 0;
+}
+
+/* окно добавления заявки*/
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400|Montserrat:400');
+
+.query {
+	z-index: 99999;
+}
+
+.query .button {
+	z-index: 99999;
+	height: 7.89vh;
+	left: 42.85vw;
+	position: fixed;
+	top: 75.29vh;
+	width: 14.31vw;
+	background: #333;
+	border: 1px solid #c93;
+	border-radius: 10px;
+	font-family: Roboto Slab;
+	font-size: 1.75vh;
+	line-height: 2.26vh;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.query .title {
+	z-index: 99999;
+	height: 4vh;
+	left: 21.315vw;
+	position: fixed;
+	top: 22vh;
+	width: 57.37vw;
+}
+
+.query .background {
+	z-index: 99999;
+	opacity: 1;
+	height: 80vh;
+	left: 0;
+	position: fixed;
+	top: 10vh;
+	width: 100vw;
+}
+
+.query .input1 {
+	z-index: 99999;
+	height: 1.88vh;
+	left: 43.33vw;
+	position: fixed;
+	top: 84.31vh;
+	width: 1.32vw;
+}
+
+.query .approval {
+	z-index: 99999;
+	font-family: Roboto Slab;
+	font-size: 1.19vh;
+	line-height: 1.63vh;
+	color: rgba(255, 255, 255, 0.5);
+	left: 45.83vw;
+	position: fixed;
+	top: 84.56vh;
+}
+
+.query .input2 {
+	z-index: 99999;
+	height: 1.88vh;
+	left: 30.63vw;
+	position: fixed;
+	top: 42.33vh;
+	width: 1.32vw;
+}
+
+.query .input3 {
+	z-index: 99999;
+	height: 1.88vh;
+	left: 51.04vw;
+	position: fixed;
+	top: 42.46vh;
+	width: 1.32vw;
+}
+
+.query .input4 {
+	z-index: 99999;
+	height: 1.88vh;
+	left: 30.63vw;
+	position: fixed;
+	top: 46.84vh;
+	width: 1.32vw;
+}
+
+.query .input5 {
+	z-index: 99999;
+	height: 1.88vh;
+	left: 51.04vw;
+	position: fixed;
+	top: 46.84vh;
+	width: 1.32vw;
+}
+
+.query .input6 {
+	z-index: 99999;
+	height: 1.88vh;
+	left: 30.63vw;
+	position: fixed;
+	top: 51.23vh;
+	width: 1.32vw;
+}
+
+.query .input7 {
+	z-index: 99999;
+	height: 1.88vh;
+	left: 51.04vw;
+	position: fixed;
+	top: 51.23vh;
+	width: 1.32vw;
+}
+
+.query .other {
+	z-index: 99999;
+	background: none;
+	resize: none;
+	height: 14.66vh;
+	left: 28.54vw;
+	position: fixed;
+	top: 56.87vh;
+	width: 42.92vw;
+	padding-top: 1.5vh;
+	padding-left: 1.04vw;
+	color: white;
+	font-family: Montserrat;
+	font-size: 1.75vh;
+	line-height: 2.13vh;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.query .sell {
+	z-index: 99999;
+	font-family: Roboto Slab;
+	font-size: 2.01vh;
+	line-height: 2.63vh;
+	color: rgba(255, 255, 255, 0.9);
+	left: 32.36vw;
+	position: fixed;
+	top: 42.08vh;
+}
+
+.query .legalization {
+	z-index: 99999;
+	font-family: Roboto Slab;
+	font-size: 2.01vh;
+	line-height: 2.63vh;
+	color: rgba(255, 255, 255, 0.9);
+	left: 52.78vw;
+	position: fixed;
+	top: 42.08vh;
+}
+
+.query .buy {
+	z-index: 99999;
+	font-family: Roboto Slab;
+	font-size: 2.01vh;
+	line-height: 2.63vh;
+	color: rgba(255, 255, 255, 0.9);	
+	left: 32.36vw;
+	position: fixed;
+	top: 46.47vh;
+}
+
+.query .cadastre {
+	z-index: 99999;
+	font-family: Roboto Slab;
+	font-size: 2.01vh;
+	line-height: 2.63vh;	
+	left: 52.78vw;
+	position: fixed;
+	top: 46.47vh;
+}
+
+.query .rent {
+	z-index: 99999;
+	font-family: Roboto Slab;
+	font-size: 2.01vh;
+	line-height: 2.63vh;	
+	left: 32.36vw;
+	position: fixed;
+	top: 50.85vh;
+}
+
+.query .juridical {
+	z-index: 99999;
+	font-family: Roboto Slab;
+	font-size: 2.01vh;
+	line-height: 2.63vh;
+	left: 52.78vw;
+	position: fixed;
+	top: 50.85vh;
+}
+
+.query .reason-text {
+	z-index: 99999;
+	font-family: Roboto Slab;
+	font-size: 2.26vh;
+	line-height: 3.01vh;
+	color: rgba(255, 255, 255, 0.9);
+	left: 27.15vw;
+	position: fixed;
+	top: 36.57vh;
+}
+
+.query .name {
+	z-index: 99999;
+	background: none;
+	border: none;
+	font-family: Montserrat;
+	font-size: 1.75vh;
+	line-height: 2.13vh;
+	color: rgba(255, 255, 255, 0.5);
+	left: 28.54vw;
+	position: fixed;
+	text-align: left;
+	top: 30.05vh;
+	width: 17.36vw;
+}
+
+.query .line1 {
+	z-index: 99999;
+	height: 0.13vh;
+	left: 28.54vw;
+	position: fixed;
+	top: 33.56vh;
+	width: 17.36vw;
+}
+
+.query .mobile {
+	z-index: 99999;
+	background: none;
+	border: none;
+	font-family: Montserrat;
+	font-size: 1.75vh;
+	line-height: 2.13vh;
+	color: rgba(255, 255, 255, 0.5);
+	left: 54.51vw;
+	width: 17.36vw;
+	position: fixed;
+	top: 30.05vh;
+}
+
+.query .line2 {
+	z-index: 99999;
+	height: 0.13vh;
+	left: 54.51vw;
+	position: fixed;
+	top: 33.56vh;
+	width: 17.36vw;
 }

@@ -2,9 +2,10 @@ from django.contrib import admin
 
 from django.contrib import admin
 
-from .models import Estate, EstateType, Gallery
+from .models import Estate, EstateType, Gallery, Query
 
 admin.site.register(EstateType)
+admin.site.register(Query)
 
 class GalleryInline(admin.TabularInline):
     fk_name = 'estate'

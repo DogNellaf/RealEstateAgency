@@ -6,11 +6,9 @@
    <div class="dmitrov-background" style="background: url({% static 'png/dmitrov-background.png' %}); background-size: cover;">
       <img class="big-logo"  src="{% static 'png/logo-wt-1@1x.png' %}" >
       <img class="agency-label" src="{% static 'svg/title.svg' %}" >
-      <a href="#">
-         <div class="button-label" style="background: url({% static 'svg/rectangle-2@2x.svg' %}); background-size: 100% 100%;">
-            <p>Оставить заявку</p>
-         </div>
-      </a>
+      <div onclick="showQuery();" class="button-label" style="background: url({% static 'svg/rectangle-2@2x.svg' %}); background-size: 100% 100%;">
+         <p>Оставить заявку</p>
+      </div>
    </div>
 
    <div style="padding-top: 20px;">
@@ -90,30 +88,38 @@
       <img class="example-house1"  src="{% static 'png/rectangle-43@2x.png' %}" >
       <img class="example-house2"  src="{% static 'png/rectangle-44@2x.png' %}" >
       <img class="example-house2"  src="{% static 'png/rectangle-45@1x.png' %}" >
-      <a href="#">
+      <a href="{% url 'catalog'%}">
          <div class="example-button">
             <p>Перейти в каталог</p>
          </div>
       </a>
    </div>
 
-   <div class="consult-background" style="background: url({% static 'png/rectangle-26@1x.png' %}) no-repeat; background-size:cover;">
+   <form class="consult-background" style="background: url({% static 'png/rectangle-26@1x.png' %}) no-repeat; background-size:cover;" method="POST">
       <img class="consult-title"  src="{% static 'svg/-------------------------------------@2x.svg' %}" >
-      <form class="consult-form" >
-         <textarea id="name" class="consult-input1" placeholder="Имя" style="border: 1px solid transparent; border-image: url({% static 'svg/line-3@2x.svg' %}) 2; border-top-style: none; border-left-style: none; border-right-style: none;"></textarea>
-         <textarea id="mobile" class="consult-input2" placeholder="+7 (999) 999 99 99" style="border: 1px solid transparent; border-image: url({% static 'svg/line-3@2x.svg' %}) 2; border-top-style: none; border-left-style: none; border-right-style: none;"></textarea>
+      <div class="consult-form" >
+         <textarea name="name" class="consult-input1" placeholder="Имя" style="border: 1px solid transparent; border-image: url({% static 'svg/line-3@2x.svg' %}) 2; border-top-style: none; border-left-style: none; border-right-style: none;"></textarea>
+         <textarea name="mobile" class="consult-input2" placeholder="+7 (999) 999 99 99" style="border: 1px solid transparent; border-image: url({% static 'svg/line-3@2x.svg' %}) 2; border-top-style: none; border-left-style: none; border-right-style: none;"></textarea>
          <div style="display: table-cell;">
-            <input id="submit" class="consult-button" type="button" style="background: url({% static 'svg/group-11@2x.svg' %}) no-repeat; background-size:cover;"> <br>
+            <input id="submit" class="consult-button" type="submit"> <br>
             <input type="checkbox" class="consult-checkbox"  src="{% static 'svg/rectangle-27@2x.svg' %}">
             <span class="consult-text">Согласие на обработку данных</span>
+             <input name="approval" type="hidden">
+             <input name="sell" type="hidden">
+             <input name="legalization" type="hidden">
+             <input name="buy" type="hidden">
+             <input name="cadastre" type="hidden">
+             <input name="rent" type="hidden">
+             <input name="juridical" type="hidden">
+             <input name="other" type="hidden">
          </div>
-      </form>
-   </div>
+      </div>
+   </form>
 
    <iframe style="width: 100vw; height: 60vh;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A507cdea4cd253a8af22dfa6b177c697f37260c7ae4171355745b97ced8a4cbb8&amp;source=constructor" width="100%" height="478" frameborder="0"></iframe>
 
    <div class="query-background" style="background: url({% static 'svg/query.svg' %}); background-size:100% 100%;">
-      <a href="#">
+      <a onclick="showQuery();">
          <div class="query-button" style="background: url({% static 'png/Rectangle 24.png' %}); background-size:100% 100%;">
             <p>Оставить заявку </p>
          </div>
