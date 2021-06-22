@@ -622,6 +622,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 .about .workers-box {
 	z-index: 10000;
 	margin-left:7vw;
+	margin-bottom: 10vh;
 	width:86vw;
 }
 
