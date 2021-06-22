@@ -6,45 +6,47 @@ from .models import Estate, EstateType, Gallery, Query
 # Стартовая страница
 def index(request):
     if request.method == "POST":
-        if request.POST.get("name") != '' and request.POST.get("mobile") != '':
-            query = Query()
-            print(request.POST.get("name"))
-            query.name = request.POST.get("name")
-            query.mobile = request.POST.get("mobile")
+        query = Query()
+        print(request.POST.get("name"))
+        query.name = request.POST.get("name")
+        query.mobile = request.POST.get("mobile")
 
-            if request.POST.get("sell") == "on":
-                query.sell = True
-            else:
-                query.sell = False
+        if request.POST.get("sell") == "on":
+            query.sell = True
+        else:
+            query.sell = False
 
-            if request.POST.get("legalization") == "on":
-                query.legalization = True
-            else:
-                query.legalization = False
+        if request.POST.get("legalization") == "on":
+            query.legalization = True
+        else:
+            query.legalization = False
 
-            if request.POST.get("buy") == "on":
-                query.buy = True
-            else:
-                query.buy = False
+        if request.POST.get("buy") == "on":
+            query.buy = True
+        else:
+            query.buy = False
 
-            if request.POST.get("cadastre") == "on":
-                query.cadastre = True
-            else:
-                query.cadastre = False
+        if request.POST.get("cadastre") == "on":
+            query.cadastre = True
+        else:
+            query.cadastre = False
 
-            if request.POST.get("rent") == "on":
-                query.rent = True
-            else:
-                query.rent = False
+        if request.POST.get("rent") == "on":
+            query.rent = True
+        else:
+            query.rent = False
 
-            if request.POST.get("juridical") == "on":
-                query.juridical = True
-            else:
-                query.juridical = False
+        if request.POST.get("juridical") == "on":
+            query.juridical = True
+        else:
+            query.juridical = False
 
-            query.other = request.POST.get("other")
-            query.save()
-    return render(request, "index.html")
+        query.other = request.POST.get("other")
+        query.save()
+        return render(request, "index.html")
+        #return HttpResponse("<h2>Ваша заявка принята!</h2>".format(name))
+    else:
+        return render(request, "index.html")
 
 
 # Контакты

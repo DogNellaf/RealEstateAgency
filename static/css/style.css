@@ -620,8 +620,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .about .workers-box {
-	z-index: 10;
-	height:100vh;
+	z-index: 10000;
 	margin-left:7vw;
 	width:86vw;
 }
@@ -697,12 +696,13 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 
 .about .worker-name {
 	z-index: 3;
-	margin-left:8vw;
+	padding-left:8vw;
 	margin-top:2vh;
 	height: 3.01vh;
 }
 
 .about .background1 {
+	z-index:-1;
 	background-color:transparent;
 	height:28.59vh;
 	left:16.81vw;
@@ -712,6 +712,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .about .background2 {
+	z-index:1;
 	background-color:transparent;
 	height:83.12vh;
 	left:88.06vw;
@@ -730,6 +731,7 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .about .background4 {
+	z-index:1;
 	background-color:transparent;
 	height:83.12vh;
 	left:0.78vw;
