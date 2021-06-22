@@ -10,9 +10,50 @@
 		<title>{% block title %}{% endblock %}</title>
 		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
       	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script>
+			function hideQuery() {
+				document.getElementById('query-box').style.display = "none";
+		   	}
 		   	function showQuery() {
 				document.getElementById('query-box').style.display = "inline";
+		   	}
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+				var scr = $(".houses-box");
+				scr.mousedown(function () {
+					var startX = this.scrollLeft + event.pageX;
+					var startY = this.scrollTop + event.pageY;
+					scr.mousemove(function () {
+						this.scrollLeft = startX - event.pageX;
+						this.scrollTop = startY - event.pageY;
+						return false;
+					});
+				});
+				$(window).mouseup(function () {
+					scr.off("mousemove");
+				});
+			}
+		</script>
+		<script type="text/javascript">
+			function showHouse1() {
+				document.getElementById('hidden_element1').hidden = false;
+		   	}
+			function hideHouse1() {
+				document.getElementById('hidden_element1').hidden = true;
+		   	}
+			function showHouse2() {
+				document.getElementById('hidden_element2').hidden = false;
+		   	}
+			function hideHouse2() {
+				document.getElementById('hidden_element2').hidden = true;
+		   	}
+			function showHouse3() {
+				document.getElementById('hidden_element3').hidden = false;
+		   	}
+			function hideHouse3() {
+				document.getElementById('hidden_element3').hidden = true;
 		   	}
 		</script>
 	</head>
@@ -29,6 +70,7 @@
 		</div>
 		{% block content %}{% endblock %}
 		<form id="query-box" style="display: none!important" class="query" method="POST">
+			<button onclick="hideQuery();" class="cross"><img src="{% static 'svg/cross.svg' %}"></button>
 			<img class="background" src="{% static 'png/background.png' %}">
 			<input type="submit" class="button" value="Оставить заявку">
 			<div class="approval">Согласие на обработку данных</div>
@@ -43,7 +85,6 @@
 			<input name="cadastre" type="checkbox" class="input5" src="{% static 'svg/rectangle-27@2x.svg' %}">
 			<input name="rent" type="checkbox" class="input6" src="{% static 'svg/rectangle-27@2x.svg' %}">
 			<input name="juridical" type="checkbox" class="input7" src="{% static 'svg/rectangle-27@2x.svg' %}">
-
 			<textarea name="other" class="other" placeholder = "Другой вопрос..."></textarea>
 			<img class="title" src="{% static 'svg/-------------------------------------@2x.svg' %}">
 			<div class="reason-text" >Выбрать причину заявки</div>

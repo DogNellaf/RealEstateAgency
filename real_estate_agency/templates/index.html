@@ -85,9 +85,54 @@
 
    <div>
       <h1 class="example-title" >Наши объекты</h1>
-      <img class="example-house1"  src="{% static 'png/rectangle-43@2x.png' %}" >
-      <img class="example-house2"  src="{% static 'png/rectangle-44@2x.png' %}" >
-      <img class="example-house2"  src="{% static 'png/rectangle-45@1x.png' %}" >
+      <div onmouseenter="showHouse1();" onmouseleave="hideHouse1();" class="example-house1"  style="background: url({% static 'png/rectangle-43@2x.png' %}); background-size: auto 100%;" >
+         <div id="hidden_element1" hidden="hidden" class="example-house-background">
+            <p class="example-house-title">Дмитров, Махалина д.25</p>
+            <div>
+               <p class="example-house-area-title">Площадь:</p>
+               <p class="example-house-area-value">60,7 кв.м</p>
+            </div>
+            <div>
+               <p class="example-house-cost-title">Цена:</p>
+               <p class="example-house-cost-value">6 350 000 Р</p>
+            </div>
+            <a href="catalog/Крутая квартира/">
+               <button class="example-house-button">Подробнее</button>
+            </a>
+         </div>
+      </div>
+      <div onmouseenter="showHouse2();" onmouseleave="hideHouse2();" class="example-house2"  style="background: url({% static 'png/rectangle-44@2x.png' %}); background-size: auto 100%;" >
+         <div id="hidden_element2" hidden="hidden" class="example-house-background">
+            <p class="example-house-title">test2</p>
+            <div>
+               <p class="example-house-area-title">Площадь:</p>
+               <p class="example-house-area-value"></p>
+            </div>
+            <div>
+               <p class="example-house-cost-title">Цена:</p>
+               <p class="example-house-cost-value"></p>
+            </div>
+            <a href="#">
+               <button class="example-house-button">Подробнее</button>
+            </a>
+         </div>
+      </div>
+      <div onmouseenter="showHouse3();" onmouseleave="hideHouse3();" class="example-house2"  style="background: url({% static 'png/rectangle-45@1x.png' %}); background-size: auto 100%;" >
+         <div id="hidden_element3" hidden="hidden" class="example-house-background">
+            <p class="example-house-title">test3</p>
+            <div>
+               <p class="example-house-area-title">Площадь:</p>
+               <p class="example-house-area-value"></p>
+            </div>
+            <div>
+               <p class="example-house-cost-title">Цена:</p>
+               <p class="example-house-cost-value"></p>
+            </div>
+            <a href="#">
+               <button class="example-house-button">Подробнее</button>
+            </a>
+         </div>
+      </div>
       <a href="{% url 'catalog'%}">
          <div class="example-button">
             <p>Перейти в каталог</p>

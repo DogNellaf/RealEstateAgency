@@ -46,7 +46,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	color: white;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 #menu-bar {
@@ -169,17 +169,17 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 }
 
 .index .houses-box {
-	display: table;
+	white-space: nowrap;
 	background-color:#18191b;
 	height:27.5vh;
 	overflow:hidden;
 	margin-top:12.3vh;
 	margin-right:0;
-	width:133vw;
+	width:100vw;
 }
 
 .index .houses {
-	display: table-cell;
+	display: inline-block;
 	vertical-align: middle;
 	height:27.5vh;
 	padding-left:0;
@@ -314,18 +314,99 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	margin-top:4vh;
 }
 
+.index .example-house-background {
+	background-image: transparent;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.index .example-house-title {
+	padding-top: 12.28vh;
+	padding-left: 4.44vw;
+	font-family: Montserrat;
+	font-size: 2.26vh;
+	line-height: 2.76vh;
+	color: #FFFFFF;
+}
+
+.index .example-house-area-title {
+	display: inline-block;
+	margin-top: 1.63vh;
+	padding-left: 4.44vw;	
+	font-family: Montserrat;
+	font-size: 2.01vh;
+	line-height: 2.51vh;
+	color: #FFFFFF;
+}
+
+.index .example-house-area-value {
+	display: inline-block;
+	margin-top: 1.63vh;
+	margin-left: 5.21vw;	
+	font-family: Montserrat;
+	font-size: 2.01vh;
+	line-height: 2.51vh;
+	color: #FFFFFF;	
+}
+
+.index .example-house-cost-title {
+	display: inline-block;
+	margin-top: 1vh;
+	padding-left: 4.44vw;	
+	font-family: Montserrat;
+	font-size: 2.01vh;
+	line-height: 2.51vh;
+	color: #FFFFFF;
+}
+
+.index .example-house-cost-value {
+	display: inline-block;
+	margin-top: 1vh;
+	margin-left: 6.32vw;	
+	font-family: Montserrat;
+	font-size: 2.01vh;
+	line-height: 2.51vh;
+	color: #FFFFFF;		
+}
+
+.index .example-house-button {
+	margin-top: 7.02vh;
+	margin-left: 1.39vw;	
+	width: 11.53vw;
+	height: 5.64vh;
+	background: linear-gradient(1.53deg, #A27227 -105.38%, #FEDA5B -55.37%, #FEDA5B 20.53%, #CD953D 123.35%, #C99C39 253.11%, #FEDA5B 329.52%, #EDC84C 515.07%, #A27227 671.76%, #EDC84C 925.5%);
+	border-radius: 10px;
+	font-family: Roboto Slab;
+	font-size: 2.01vh;
+	line-height: 2.51vh;
+	color: rgba(0, 0, 0, 0.8);
+}
+
 .index .example-house1 {
+	vertical-align: top;
+	display: inline-block;
 	height:46vh;
 	width:25.2vw;
 	margin-top:5.83vh;
 	margin-left:10.3vw;
 }
 
+.index .example-house1:hover {
+	border: solid 1px white;
+}
+
+.index .example-house2:hover {
+	border: solid 1px white;
+}
+
 .index .example-house2 {
+	vertical-align: top;
+	display: inline-block;
 	height:46vh;
 	width:25.2vw;
 	margin-top:5.88vh;
-	padding-left:2vw;
+	margin-left:2vw;
 }
 
 .index .example-button {
@@ -472,55 +553,6 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 
 /* стили страницы "О нас" */
 
-.about .workers-box {
-	height:100vh;
-	left:10.2vw;
-	position:absolute;
-	top:140.3vh;
-	width:79.86vw;
-}
-
-.about .name1 {
-	z-index: 3;
-	background-color:transparent;
-	height:2.27vh;
-	left:19.375vw;
-	position:absolute;
-	top:197.97vh;
-	width:6.875vw;
-}
-
-.about .name2 {
-	z-index: 3;
-	background-color:transparent;
-	height:2.27vh;
-	left:46.25vw;
-	position:absolute;
-	top:197.23vh;
-	width:7.57vw;
-}
-
-.about .name3 {
-	z-index: 3;
-	background-color:transparent;
-	height:2.02vh;
-	left:75.21vw;
-	position:absolute;
-	top:197.36vh;
-	width:3.96vw;
-}
-
-.about .worker1-type {
-	z-index: 2;
-	background-color:transparent;
-	color:var(--white-2);
-	font-family:var(--font-family-roboto_slab);
-	font-size:var(--font-size-l);
-	left:9.65vw;
-	position:absolute;
-	top:45.5vh;
-}
-
 .about .about-query-button {
 	margin-left: 42.15vw;
 	margin-top: -1.26vh;
@@ -577,112 +609,97 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	width:100vw;
 }
 
+.about .workers-title {
+	margin-left: 38.54vw;
+	margin-top: 3.65vh;
+	margin-bottom: -10vh;
+	font-family: Roboto Slab;
+	font-size: 5.04vh;
+	line-height: 6.68vh;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.about .workers-box {
+	z-index: 10;
+	height:100vh;
+	margin-left:7vw;
+	width:86vw;
+}
+
 .about .worker1 {
+	display:inline-block;
+	vertical-align: middle;
 	height:49.87vh;
-	left:0;
-	position:absolute;
-	top:14.86vh;
+	margin-top:14.86vh;
 	width:25.14vw;
 }
 
 .about .worker2 {
+	display:inline-block;
+	vertical-align: middle;
 	height:49.87vh;
-	left:0;
-	position:absolute;
-	top:76.07vh;
+	margin-top:14.86vh;
 	width:25.14vw;
 }
 
 .about .worker3 {
+	display:inline-block;
+	vertical-align: middle;
 	height:49.87vh;
-	left:27.22vw;
-	position:absolute;
-	top:14.86vh;
-	width:25.14vw;
-}
-
-.about .worker5 {
-	height:49.87vh;
-	left:54.44vw;
-	position:absolute;
-	top:14.86vh;
+	margin-left:3vw;
+	margin-top:14.86vh;
 	width:25.14vw;
 }
 
 .about .worker4 {
+	display:inline-block;
+	vertical-align: middle;
 	height:49.87vh;
-	left:27.22vw;
-	position:absolute;
-	top:76.07vh;
+	margin-left:3vw;
+	margin-top:14.86vh;
+	width:25.14vw;
+}
+
+.about .worker5 {
+	display:inline-block;
+	vertical-align: middle;
+	height:49.87vh;
+	margin-left:3vw;
+	margin-top:14.86vh;
 	width:25.14vw;
 }
 
 .about .worker6 {
+	display:inline-block;
+	vertical-align: middle;
 	height:49.87vh;
-	left:54.44vw;
-	position:absolute;
-	top:76.07vh;
+	margin-left:3vw;
+	margin-top:14.86vh;
 	width:25.14vw;
 }
 
-.about .worker1-name {
+.about .worker-name-background {
 	z-index: 1;
 	background-color:var(--eerie-black);
 	height:9.45vh;
-	left:0;
-	position:absolute;
-	top:40.5vh;
-	width:25.14vw;
+	margin-left:0vw;
+	margin-top:40.5vh;
 }
 
-.about .worker2-name {
-	z-index: 1;
-	background-color:var(--eerie-black);
-	height:9.45vh;
-	left:27.22vw;
-	position:absolute;
-	top:40.5vh;
-	width:25.14vw;
+.about .worker-type {
+	font-family: Roboto Slab;
+	font-size: 2.26vh;
+	line-height: 3.01vh;
+	color: #FFFFFF;
+	margin-left:9.55vw;
+	z-index: 11;
 }
 
-.about .worker3-name {
-	z-index: 1;
-	background-color:var(--eerie-black);
-	height:9.45vh;
-	left:54.44vw;
-	position:absolute;
-	top:40.5vh;
-	width:25.14vw;
-}
-
-.about .worker4-name {
-	z-index: 1;
-	background-color:var(--eerie-black);
-	height:9.45vh;
-	left:54.44vw;
-	position:absolute;
-	top:116.5vh;
-	width:25.14vw;
-}
-
-.about .worker5-name {
-	z-index: 1;
-	background-color:var(--eerie-black);
-	height:9.45vh;
-	left:27.22vw;
-	position:absolute;
-	top:116.5vh;
-	width:25.14vw;
-}
-
-.about .worker6-name {
-	z-index: 1;
-	background-color:var(--eerie-black);
-	height:9.45vh;
-	left:0;
-	position:absolute;
-	top:116.5vh;
-	width:25.14vw;
+.about .worker-name {
+	z-index: 3;
+	margin-left:8vw;
+	margin-top:2vh;
+	height: 3.01vh;
 }
 
 .about .background1 {
@@ -729,15 +746,6 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 .about .title-text {
 	padding-top: 11.59vh;
 	padding-left: 10.21vw;
-	font-family: Roboto Slab;
-	font-size: 5.04vh;
-	line-height: 6.68vh;
-	color: rgba(255, 255, 255, 0.9);
-}
-
-.about .workers-title {
-	margin-left: 38.54vw;
-	margin-top: 3.65vh;
 	font-family: Roboto Slab;
 	font-size: 5.04vh;
 	line-height: 6.68vh;
@@ -1471,6 +1479,15 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	position: fixed;
 	top: 84.31vh;
 	width: 1.32vw;
+}
+
+.query .cross {
+	z-index: 999999;
+	left: 95vw;
+	position: fixed;
+	top: 15vh;
+	height: 5vh;
+	width: 5vh;
 }
 
 .query .approval {
