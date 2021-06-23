@@ -1,10 +1,11 @@
 import os, sys
 import mimetypes
+from pathlib import Path
 
 mimetypes.add_type("text/css", ".css", True)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
@@ -19,12 +20,13 @@ SECRET_KEY = '7c#t@kax)**ca)7bx8a%#xkl8nczj8(nz)-*(%mf1o^_j%23g1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'estate',
     'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -32,7 +34,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'estate',
 ]
 
 MIDDLEWARE = [
@@ -77,24 +78,9 @@ WSGI_APPLICATION = 'real_estate_agency.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR + '/' + 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': '',
-#        'USER': '',
-#        'HOST': '',
-#        'PASSWORD': '',
-#        'OPTIONS': {
-#            'init_command': "SET sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER'",
-#            'charset': 'utf8mb4',
-#            'use_unicode': True,
-#        },
-#    }
-#}
 
 
 # Password validation

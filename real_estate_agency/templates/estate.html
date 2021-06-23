@@ -6,15 +6,19 @@
     <a href="{% url 'catalog'%}" class="back-text-arrow" style="background-image: url({% static 'svg/back-arrow.svg' %}); background-size: 100% 100%;"></a>
     <div class="row">
         <div class="col">
-            <div class="main-photo" style="background-image: url({{gallery.0.image.url}}); background-size: 100% 100%;"></div>
-            <div class="gallery-first" style="background-image: url({{gallery.1.image.url}});background-size: 100% 100%;"></div>
-            <div class="gallery" style="background-image: url({{gallery.2.image.url}});background-size: 100% 100%;"></div>
-            <div class="gallery" style="background-image: url({{gallery.3.image.url}});background-size: 100% 100%;"></div>
-            <div class="gallery" style="background-image: url({{gallery.4.image.url}});background-size: 100% 100%;"></div>
-            <div class="gallery" style="background-image: url({{gallery.5.image.url}});background-size: 100% 100%;"></div>
-            <div class="arrow">
+            <div id="main" class="main-photo" style="background-image: url({{gallery.0.image.url}}); background-size: 100% 100%;"></div>
+          <div id="carousel" class="carousel">
+            <div class="gallery">
+              <ul class="images">
+                {% for img in gallery %}
+                    <li onclick="showImage('{{img.image.url}}');" style="background-image: url({{img.image.url}}); background-size: 100% 100%;"></li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div id="arrow" class="arrow">
                 <div class="arrow-element" style="background-image: url({% static 'svg/arrow.svg' %});background-size: 100% 100%;"></div>
             </div>
+          </div>
         </div>
         <div class="col" style="width: 80%!important;">
             <div class="title">{{gallery.0.estate.address}}</div>
@@ -37,6 +41,39 @@
             </a>
         </div>
     </div>
-
 </div>
+<script>
+    arrow.addEventListener('click', () => setTimeout(nextBlock, 0));
+    let i = 1;
+    for(let li of carousel.querySelectorAll('li')) {
+      li.style.position = 'relative';
+      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+      i++;
+    }
+
+    let width = 110;
+    let count = 5;
+
+    let list = carousel.querySelector('ul');
+    let listElems = carousel.querySelectorAll('li');
+
+    let position = 0;
+
+    function nextBlock() {
+        let oldpos = position;
+        position -= width * count;
+        position = Math.max(position, -width * (listElems.length - count));
+        if (oldpos == position)
+        {
+            position = 0;
+        };
+        list.style.marginLeft = position + 'px';
+    };
+
+    function showImage(image) {
+        main.style.background = 'url(' + image + ')';
+        main.style.backgroundSize = '100% 100%';
+    };
+
+</script>
 {% endblock %}

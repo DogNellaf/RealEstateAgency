@@ -1232,6 +1232,16 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	height: 130vh;
 }
 
+#scroller {
+	height: 11vh;
+	width: 6vw;
+	padding-left: 5.42vw;
+	margin-top: 2.78vh;
+	overflow: none;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
 .estate .back-text-arrow {
 	height: 2.15vh;
 	width: 8.19vw;
@@ -1256,15 +1266,6 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	border: 0.065vh white solid;
 	vertical-align: middle;
 }
-.estate .gallery {
-	display: inline-block;
-	height: 11vh;
-	width: 6vw;
-	margin-left: 0;
-	margin-top: 2.78vh;
-	border: 0.065vh white solid;
-	vertical-align: middle;
-}
 
 .estate .arrow {
 	display: inline-block;
@@ -1273,8 +1274,8 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	border-radius: 10px;
 	height: 5.06vh;
 	margin-left: 2vw;
-	margin-top: 2.78vh;
-	vertical-align: middle;
+	margin-top: 8vh;
+	vertical-align: top;
 	width: 2.78vw;
 }
 
@@ -1360,6 +1361,40 @@ a.menu-bar-a:active,a.menu-bar-a:hover,a.menu-bar-a {
 	margin-top: 3.16vh;
 	margin-left: 1vw;
 	width: 38.68vw;
+}
+
+.estate .arrow:focus {
+  outline: none;
+}
+
+.estate .arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.estate .gallery {
+	display: inline-block;
+	height: 11vh;
+	width: 550px;
+	margin-top: 5vh;
+	overflow: hidden;
+}
+
+.estate .gallery ul {
+	height: 11vh;
+	width: 999vw;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transition: margin-left 250ms;
+	font-size: 0;
+}
+
+.estate .gallery li {
+	display: inline-block;
+	margin-left: 10px;
+	height: 11vh;
+	width: 100px;
 }
 
 /* страница подкаталога */
