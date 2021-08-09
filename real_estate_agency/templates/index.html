@@ -4,7 +4,9 @@
 {% block content %}
 <div class="index">
    <div class="dmitrov-background" style="background: url({% static 'png/dmitrov-background.png' %}); background-size: cover;">
-      <img class="big-logo"  src="{% static 'png/logo-wt-1@1x.png' %}" >
+      <video class="big-logo" autoplay muted>
+         <source src="{% static 'esteg.mp4' %}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+      </video>
       <img class="agency-label" src="{% static 'svg/title.svg' %}" >
       <div onclick="showQuery();" class="button-label" style="background: url({% static 'svg/rectangle-2@2x.svg' %}); background-size: 100% 100%;">
          <p>Оставить заявку</p>
